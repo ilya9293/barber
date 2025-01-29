@@ -20,10 +20,14 @@
     "gulp-include": "^2.4.1",
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-sprite": "^2.0.3",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
   }
 }

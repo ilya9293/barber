@@ -14,6 +14,7 @@ const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 const svgSprite = require("gulp-svg-sprite");
 const include = require("gulp-include");
+const sourcemaps = require("gulp-sourcemaps");
 
 function pages() {
   return src("app/pages/*.html")
@@ -70,18 +71,22 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["app/js/main.js"])
+  return src(["app/js/*.js", "!app/js/main.min.js"])
+    .pipe(sourcemaps.init())
     .pipe(concat("main.min.js"))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(dest("app/js"))
     .pipe(browserSync.stream());
 }
 
 function styles() {
   return src("app/scss/style.scss")
+    .pipe(sourcemaps.init())
+    .pipe(scss({ outputStyle: "compressed" }))
     .pipe(autoprefixer({ overrideBrowserslist: ["last 10 version"] }))
     .pipe(concat("style.min.css"))
-    .pipe(scss({ outputStyle: "compressed" }))
+    .pipe(sourcemaps.write())
     .pipe(dest("app/css"))
     .pipe(browserSync.stream());
 }
@@ -92,9 +97,9 @@ function watching() {
       baseDir: "app/",
     },
   });
-  watch(["app/scss/style.scss"], styles);
+  watch(["app/scss/**/*.scss"], styles);
   //   watch(['app/images/src'], images)
-  watch(["app/js/main.js"], scripts);
+  watch(["app/js/*.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/*.html"]).on("change", browserSync.reload);
 }
@@ -112,6 +117,7 @@ function building() {
       "!app/images/*.svg",
       //  'app/images/sprite.svg',
       "app/fonts/*.*",
+      "app/iconFont/*.*",
       "app/js/main.min.js",
       "app/**/*.html",
     ],
