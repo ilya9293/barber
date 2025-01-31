@@ -1,0 +1,23 @@
+.title {
+  font-size: 35px;
+  line-height: 100%;
+  text-align: center;
+  color: $dark;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    & {
+      font-size: 70px;
+    }
+  }
+
+  &--course {
+    max-width: 255px;
+    margin: 0 auto;
+    @media (min-width: $tablet) {
+      & {
+        max-width: none;
+      }
+    }
+  }
+}
