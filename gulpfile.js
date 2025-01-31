@@ -99,7 +99,7 @@ function watching() {
   });
   watch(["app/scss/**/*.scss"], styles);
   //   watch(['app/images/src'], images)
-  watch(["app/js/*.js"], scripts);
+  // watch(["app/js/*.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/*.html"]).on("change", browserSync.reload);
 }
@@ -118,7 +118,7 @@ function building() {
       //  'app/images/sprite.svg',
       "app/fonts/*.*",
       "app/iconFont/*.*",
-      "app/js/main.min.js",
+      // "app/js/main.min.js",
       "app/**/*.html",
     ],
     { base: "app" }
@@ -131,14 +131,14 @@ exports.fonts = fonts;
 exports.pages = pages;
 exports.building = building;
 exports.sprite = sprite;
-exports.scripts = scripts;
+// exports.scripts = scripts;
 exports.watching = watching;
 
 exports.build = series(cleanDist, building);
 exports.default = parallel(
   styles,
   // images,
-  scripts,
+  // scripts,
   pages,
   watching
 );

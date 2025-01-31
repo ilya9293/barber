@@ -1,0 +1,193 @@
+.header-block {
+  max-width: 250px;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  @media screen and (min-width: $mobile) {
+    & {
+      // max-width: 230px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      &__title {
+        font-size: 70px;
+      }
+      &__subtitle {
+        font-size: 45px;
+      }
+    }
+  }
+}
+.main {
+  &__diploma {
+  }
+}
+
+.diploma {
+  padding: 0px 0px 39px 0px;
+
+  &__header-block {
+    padding-bottom: 14px;
+  }
+
+  &__body {
+    position: relative;
+    gap: 16px;
+    margin: 10px;
+
+    z-index: 2;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 49%;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 10px;
+      z-index: -1;
+    }
+
+    &::before {
+      top: -10px;
+      left: -10px;
+      z-index: -1;
+    }
+    &::after {
+      top: 10px;
+      right: -10px;
+      z-index: -1;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+
+  &__column {
+    flex: 1 1 47%;
+    margin-bottom: 16px;
+
+    overflow: hidden;
+    &_first {
+      border-radius: 10px 0px 0px 0px;
+      margin-right: 16px;
+    }
+    &_second {
+      border-radius: 0px 10px 0px 0px;
+    }
+  }
+  &__column_big {
+    flex: 0 1 100%;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 0px;
+  }
+
+  &__item {
+    &_vertical {
+      margin-bottom: 16px;
+    }
+    &_horizontal {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+    }
+    &_horizontal:first-child {
+      margin: 0px 0px 5px 0px;
+    }
+  }
+}
+
+.item {
+  &__image {
+    width: 100%;
+    margin: 0px;
+    &_h {
+      aspect-ratio: 167 /256;
+    }
+    &_first {
+      margin-bottom: 5px;
+    }
+    &_v {
+      aspect-ratio: 350 / 130;
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &_v {
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .diploma {
+    &__body {
+      margin: 11px;
+      &::before {
+        width: 23%;
+      }
+      &::after {
+        width: 23%;
+      }
+    }
+    &__row {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    &__column {
+      margin-bottom: 0px;
+      flex: 0 1 23%;
+      &_first {
+        border-radius: 10px 0px 0px 10px;
+        margin-right: 0;
+      }
+    }
+    &__column_big {
+      flex: 0 1 50%;
+      border-radius: 0px;
+    }
+    &__column_second {
+      order: 1;
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+
+  .item {
+    &__image {
+      &_h {
+        aspect-ratio: 274 / 477;
+      }
+
+      &_v {
+        aspect-ratio: 590 / 233;
+      }
+    }
+  }
+}
