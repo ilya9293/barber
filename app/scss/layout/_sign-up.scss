@@ -1,0 +1,21 @@
+.sign-up {
+  &__text {
+    font-size: 18px;
+    line-height: 100%;
+    max-width: 285px;
+    text-align: center;
+    margin: 7px auto 0;
+  }
+
+  @media (min-width: $tablet) {
+    &__text {
+      max-width: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__text {
+      font-size: 50px;
+    }
+  }
+}
