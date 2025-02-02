@@ -1,0 +1,31 @@
+.form-registry {
+  &__fieldset {
+    border: 1px solid #17c7e6;
+    border-radius: 50px;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  &__name {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+
+//   &__input:focus {
+//     outline: none;
+//   }
+}
+
+.form-registry--course {
+   margin-top: 19px;
+}

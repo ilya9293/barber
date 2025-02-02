@@ -1,0 +1,40 @@
+.price-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
+  margin-top: 7px;
+
+  &__text {
+    font-size: 17px;
+    line-height: 100%;
+    color: $light;
+    width: min-content;
+  }
+
+  &__cost {
+    font-weight: 700;
+    font-size: 40px;
+    color: $light;
+    white-space: nowrap;
+  }
+
+  &__currency {
+    font-size: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (min-width: $small) {
+    & {
+      flex-direction: row;
+      padding: 0 10px;
+    }
+  }
+}
