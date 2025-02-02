@@ -1,9 +1,4 @@
 .form-registry {
-  &__fieldset {
-    border: 1px solid #17c7e6;
-    border-radius: 50px;
-  }
-
   &__label {
     position: relative;
   }
@@ -15,17 +10,19 @@
   }
 
   &__input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    padding: 0;
-  }
+   width: 100%;
+   height: 40px;
+   padding: 0;
+   border-radius: 50px;
+   border: 1px solid transparent;
+   border-image: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
+ }
 
-//   &__input:focus {
-//     outline: none;
-//   }
+  //   &__input:focus {
+  //     outline: none;
+  //   }
 }
 
 .form-registry--course {
-   margin-top: 19px;
+  margin-top: 19px;
 }
