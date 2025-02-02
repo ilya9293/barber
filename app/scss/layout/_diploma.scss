@@ -148,6 +148,9 @@
 
 @media (min-width: 950px) {
   .diploma {
+    &__header-block {
+      padding-bottom: 17px;
+    }
     &__body {
       margin: 11px;
       &::before {

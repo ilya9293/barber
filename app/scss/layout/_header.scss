@@ -12,6 +12,7 @@
   }
   &__logo {
     display: inline-block;
+    width: 102px;
   }
   &__social {
   }
@@ -159,6 +160,8 @@
     min-height: 90px;
   }
   .social {
+    font-size: 30px;
+   color: $light;
     justify-content: end;
     &__item {
       display: inline-block;
@@ -175,7 +178,7 @@
     display: block;
     height: auto;
     width: auto;
-    padding: 0px 40px;
+    padding: 0px 30px;
     &__list {
       display: flex;
       justify-content: space-between;

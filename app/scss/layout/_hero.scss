@@ -48,16 +48,17 @@
   &__text {
     color: $light;
     font-size: 15px;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 126%;
+    line-height: 130%;
     text-shadow: 0px 4px 4px #00000040;
     -webkit-text-stroke-color: $dark;
   }
   &__button {
     display: inline-block;
     padding: 15px 21px;
+    font-size: 14px;
     border-radius: 40px;
     background: linear-gradient(
       90deg,
@@ -126,14 +127,16 @@
 @media (min-width: 768px) {
   .hero {
     &__body {
-      max-width: 380px;
+      max-width: 100%;
       padding: 95px 0px 110px 0px;
     }
     &__title {
+      max-width: 380px;
       font-size: 44px;
       padding-bottom: 0px;
     }
     &__text {
+      max-width: 488px;
       font-size: 18px;
       padding-bottom: 90px;
       line-height: 125%;
@@ -150,11 +153,12 @@
 @media (min-width: 992px) {
   .hero {
     &__title {
-      font-size: 60px;
-      padding-bottom: 0px;
+      font-size: 70px;
+      padding-bottom: 20px;
+      line-height: 114%;
     }
     &__text {
-      max-width: 590px;
+      
       font-size: 18px;
       padding-bottom: 121px;
     }
@@ -163,12 +167,9 @@
 
 @media (min-width: 1020px) {
   .hero {
-    &__body {
-      // max-width: 100%;
-    }
-
+   
     &__text {
-      max-width: 600px;
+  
       font-size: 20px;
       padding-bottom: 121px;
       line-height: 125%;
@@ -183,7 +184,7 @@
     }
     &__title {
       font-size: 70px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     &__button {
