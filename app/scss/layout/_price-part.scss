@@ -37,4 +37,31 @@
       padding: 0 10px;
     }
   }
+
+  @media (min-width: $desktop) {
+    & {
+      padding: 7px 18px;
+      margin-top: 30px;
+    }
+
+    &__text {
+      font-size: 30px;
+      width: auto;
+    }
+
+    &__cost {
+      font-size: 60px;
+    }
+
+    &__currency {
+      font-size: 40px;
+    }
+
+    &__mono {
+      width: 62px;
+    }
+    &__privat {
+      width: 70px;
+    }
+  }
 }

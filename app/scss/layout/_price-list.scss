@@ -36,17 +36,29 @@
     text-decoration: line-through;
   }
 
-  &__discount {
-    display: flex;
+  &__discount-desk,
+  &__discount-mob {
     align-items: center;
     justify-content: center;
     border: 1px solid #cb0000;
+    font-weight: 700;
+    color: #cb0000;
+  }
+
+  &__discount-mob {
+    display: flex;
     width: 40px;
     height: 24px;
-    font-weight: 700;
     font-size: 14px;
     line-height: 107%;
-    color: #cb0000;
+  }
+
+  &__discount-desk {
+    display: none;
+    width: 82px;
+    height: 35px;
+    font-size: 25px;
+    line-height: 60%;
   }
 
   &__cost {
@@ -66,6 +78,43 @@
       justify-content: space-between;
       flex-direction: row;
       align-items: stretch;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    & {
+      margin-top: 7px;
+    }
+
+    &__item {
+      max-width: none;
+    }
+    &__item:last-child {
+      align-self: flex-end;
+
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__cost {
+      font-size: 60px;
+      line-height: 118%;
+      margin-bottom: -20px;
+    }
+
+    &__currency {
+      font-size: 40px;
+      line-height: 177%;
+    }
+
+    &__discount-mob {
+      display: none;
+    }
+
+    &__discount-desk {
+      display: flex;
     }
   }
 }

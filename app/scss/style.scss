@@ -1,4 +1,5 @@
 @import "../../node_modules/modern-normalize/modern-normalize";
+@import "../../node_modules/swiper/swiper-bundle";
 
 @import "./utils/fonts";
 @import "./utils/variables";
@@ -20,3 +21,6 @@
 @import "./layout/price-part";
 @import "./layout/price-note";
 @import "./components/form-registry";
+@import "./layout/sign-up-advantages";
+@import "./layout/_choice.scss";
+@import "./layout/_choice-gallery.scss";

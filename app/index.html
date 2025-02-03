@@ -10,161 +10,105 @@
 
   <body>
 
-<header>
-
-</header>
-
+=include header.html
 
 <main>
-  <section class="section">
-    <div class="container">
-      <div class="box">
-        <h2 class="title title--course">КУРС БАРБЕРА В БІЛІЙ ЦЕРКВІ</h2>
-        <ul class="course-info">
-          <li class="course-info__item">
-            <span class="course-info__type">Тривалість</span>
-            <div class="course-info__wraper">
-              <span class="course-info__num">2 </span><span class="course-info__text">МІСЯЦІ</span>
+  =include hero.html
+  =include course.html
+  <section class="section choice">
+    <!-- <div class="container"> -->
+    <h2 class="title-light">ЧОМУ ОБИРАЮТЬ НАС</h2>
+  
+    <!-- <div class="swiper"> -->
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div> -->
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+    <!-- </div> -->
+    <div class="choice-gallery__container">
+      <div class="choice-swiper swiper">
+        <ul class="choice-gallery swiper-wrapper">
+          <li class="choice-gallery__item swiper-slide">
+            <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+            <div class="choice-gallery__box-img">
+              <img
+                class="choice-gallery__img"
+                src="../images/choise-gallery-mob.webp"
+                alt="cosmetics"
+              />
             </div>
-          </li>
-          <li class="course-info__item">
-            <span class="course-info__type">Годин</span><span class="course-info__num">96+</span>
-          </li>
-          <li class="course-info__item">
-            <span class="course-info__type">Тип занять</span>
-            <div class="course-info__wraper">
-              <span class="course-info__num">80% </span
-              ><span class="course-info__text">ПРАКТИКИ</span>
-            </div>
-          </li>
-          <li class="course-info__item">
-            <span class="course-info__type">Інтенсивінсть</span>
-            <div class="course-info__wraper">
-              <span class="course-info__num">3</span
-              ><span class="course-info__text"> РАЗИ НА ТИЖДЕНЬ</span>
-            </div>
-          </li>
-        </ul>
-  
-        <ul class="course-date">
-          <li class="course-date__item">
-            <i class="icon-scissors"></i>
-            <p class="course-date__text">Найближча дата старту:</p>
-            <div class="course-date__info">
-              <span class="course-date__num">1</span><span class="course-date__month">грудня</span>
-            </div>
-          </li>
-          <li class="course-date__item">
-            <i class="icon-scissors"></i>
-            <p class="course-date__text">Лишилось місць:</p>
-            <div class="course-date__info"><span class="course-date__stat">11/12</span></div>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="box">
-        <h2 class="title">ЗАПИСУЙСЯ НА КУРС ПРЯМО ЗАРАЗ</h2>
-        <p class="sign-up__text">НА ПЕРШОМУ ПРОБНОМУ ЗАНЯТТІ ТИ ВЖЕ ЗМОЖЕШ:</p>
-        <div class="sign-up__box-img">
-          <picture>
-            <source
-              srcset="../images/haircut-desktop.webp"
-              type="image/webp"
-              media="(min-width: 768px)"
-            />
-            <source srcset="../images/haircut-mob.webp" type="image/webp" />
-            <img src="../images/haircut-mob.webp" alt="barber" class="sign-up__img" />
-          </picture>
-        </div>
-  
-        <ul class="sign-up__list">
-          <li class="sign-up__item">
-            <p class="sign-up__features">ЗРОБИТИ ПЕРШУ СТРИЖКУ</p>
-            <i class="icon-check"></i>
-          </li>
-          <li class="sign-up__item">
-            <p class="sign-up__features">ПОЗНАЙОМИТИСЬ З УЧНЯМИ ТА ВИКЛАДАЧАМИ</p>
-            <i class="icon-check"></i>
-          </li>
-          <li class="sign-up__item">
-            <p class="sign-up__features">ВІДЧУТИ АТМОСФЕРУ АКАДЕМІЇ</p>
-            <i class="icon-check"></i>
-          </li>
-          <li class="sign-up__item">
-            <p class="sign-up__features">ПОБАЧИТИ ПРОГРАМУ І ФОРМАТ НАВЧАННЯ</p>
-            <i class="icon-check"></i>
-          </li>
-          <li class="sign-up__item">
-            <p class="sign-up__features">ВИЗНАЧИТИСЬ, ЧИ ПІДХОДИТЬ ТОБІ НАША АКАДЕМІЯ</p>
-            <i class="icon-check"></i>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="box">
-        <h2 class="title">РЕЄСТРАЦІЯ НА КУРС</h2>
-        <div class="price__container">
-          <div class="price__box">
-            <ul class="price-list">
-              <li class="price-list__item">
-                <p class="price-list__title">Повна вартість</p>
-                <p class="price-list__cost">
-                  <span class="price-list__price">26 000</span>
-                  <span class="price-list__currency">ГРН</span>
-                </p>
-              </li>
-              <li class="price-list__item">
-                <div class="price-list__box-title">
-                  <p class="price-list__title">
-                    <span class="price-list__title-name">Одним платежем</span
-                    ><span class="price-list__sub-title">26 000 ГРН</span>
-                  </p>
-                  <div class="price-list__discount"><span>-10%</span></div>
-                </div>
-  
-                <p class="price-list__cost">
-                  <span class="price-list__price">23 400</span>
-                  <span class="price-list__currency">ГРН</span>
-                </p>
-              </li>
-            </ul>
-  
-            <div class="price-part">
-              <div class="price-part__text">Оплата частинами</div>
-              <div class="price-part__cost">
-                <span>6500 </span><span class="price-part__currency">ГРН</span>
-              </div>
-              <div class="price-part__icons">
-                <img src="../images/mono.webp" alt="mono" />
-                <img src="../images/privat.webp" alt="privat" />
-              </div>
-            </div>
-  
-            <p class="price-note">
-              <span class="price-note__text">
-                Щомісячний платіж при розрахунку частинами на виплат без комісії і % від monobank та
-                ПриватБанк
-              </span>
+            <p class="choice-gallery__text">
+              На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
+              шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
+              іншого.
             </p>
-          </div>
-  
-          <form class="form-registry form-registry--course">
-            <label class="form-registry__label">
-              <span class="form-registry__name">Твоє імʼя</span>
-              <input class="form-registry__input" type="text" placeholder="Ім’я Прізвище" name="name"/>
-            </label>
-            <button type="submit">Записатись</button>
-          </form>
-        </div>
+          </li>
+          <li class="choice-gallery__item swiper-slide">
+            <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+            <div class="choice-gallery__box-img">
+              <img
+                class="choice-gallery__img"
+                src="../images/choise-gallery-mob.webp"
+                alt="cosmetics"
+              />
+            </div>
+            <p class="choice-gallery__text">
+              На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
+              шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
+              іншого.
+            </p>
+          </li>
+          <li class="choice-gallery__item swiper-slide">
+            <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+            <div class="choice-gallery__box-img">
+              <img
+                class="choice-gallery__img"
+                src="../images/choise-gallery-mob.webp"
+                alt="cosmetics"
+              />
+            </div>
+            <p class="choice-gallery__text">
+              На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
+              шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
+              іншого.
+            </p>
+          </li>
+          <li class="choice-gallery__item swiper-slide">
+            <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+            <div class="choice-gallery__box-img">
+              <img
+                class="choice-gallery__img"
+                src="../images/choise-gallery-mob.webp"
+                alt="cosmetics"
+              />
+            </div>
+            <p class="choice-gallery__text">
+              На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
+              шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
+              іншого.
+            </p>
+          </li>
+        </ul>
       </div>
+      <div class="choice-pagination swiper-pagination"></div>
     </div>
+    <!-- </div> -->
   </section>
   
 </main>
 
-<footer></footer>
-
-
+=include footer.html
 <script src="js/main.min.js"></script>
 </body>
 

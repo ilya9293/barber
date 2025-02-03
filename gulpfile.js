@@ -40,19 +40,21 @@ function fonts() {
 }
 
 function images() {
-  return src(["app/images/src/*.*", "!app/images/src/*.svg"])
-   //  .pipe(newer("app/images"))
-   //  .pipe(avif({ quality: 50 }))
+  return (
+    src(["app/images/src/*.*", "!app/images/src/*.svg"])
+      //  .pipe(newer("app/images"))
+      //  .pipe(avif({ quality: 50 }))
 
-    .pipe(src("app/images/src/*.*"))
-    .pipe(newer("app/images"))
-    .pipe(webp())
+      .pipe(src("app/images/src/*.*"))
+      .pipe(newer("app/images"))
+      .pipe(webp())
 
-   //  .pipe(src("app/images/src/*.*"))
-   //  .pipe(newer("app/images"))
-    .pipe(imagemin())
+      //  .pipe(src("app/images/src/*.*"))
+      //  .pipe(newer("app/images"))
+      .pipe(imagemin())
 
-    .pipe(dest("app/images"));
+      .pipe(dest("app/images"))
+  );
 }
 
 function sprite() {
@@ -71,7 +73,7 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["app/js/*.js", "!app/js/main.min.js"])
+  return src(["node_modules/swiper/swiper-bundle.js", "app/js/*.js", "!app/js/main.min.js"])
     .pipe(sourcemaps.init())
     .pipe(concat("main.min.js"))
     .pipe(uglify())
@@ -99,7 +101,7 @@ function watching() {
   });
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/images/src"], images);
-  watch(["app/js/*.js"], scripts);
+  watch(["app/js/*.js", "!app/js/main.min.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/*.html"]).on("change", browserSync.reload);
 }

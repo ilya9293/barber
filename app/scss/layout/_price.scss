@@ -1,8 +1,21 @@
 .price {
-  &__container {
-  }
+  @media (min-width: $tablet) {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-  &__box {
+    &__box {
+      width: 57.5%;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop) {
+      &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
   }
 }
-

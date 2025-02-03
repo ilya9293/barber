@@ -91,7 +91,7 @@
             <li class="price-list__item">
               <p class="price-list__title">Повна вартість</p>
               <p class="price-list__cost">
-                <span class="price-list__price">26 000</span>
+                <span class="price-list__price">26 000 </span>
                 <span class="price-list__currency">ГРН</span>
               </p>
             </li>
@@ -101,13 +101,16 @@
                   <span class="price-list__title-name">Одним платежем</span
                   ><span class="price-list__sub-title">26 000 ГРН</span>
                 </p>
-                <div class="price-list__discount"><span>-10%</span></div>
+                <div class="price-list__discount-mob"><span>-10%</span></div>
               </div>
 
               <p class="price-list__cost">
-                <span class="price-list__price">23 400</span>
+                <span class="price-list__price">23 400 </span>
                 <span class="price-list__currency">ГРН</span>
               </p>
+            </li>
+            <li class="price-list__item">
+              <div class="price-list__discount-desk"><span>-10%</span></div>
             </li>
           </ul>
 
@@ -117,8 +120,23 @@
               <span>6500 </span><span class="price-part__currency">ГРН</span>
             </div>
             <div class="price-part__icons">
-              <img src="../images/mono.webp" alt="mono" />
-              <img src="../images/privat.webp" alt="privat" />
+              <picture>
+                <source
+                  srcset="../images/mono-desk.webp"
+                  type="image/webp"
+                  media="(min-width: 1235px)"
+                />
+                <source srcset="../images/mono-mob.webp" type="image/webp" />
+                <img class="price-part__mono" src="../images/mono-mob.webp" alt="mono" />
+              </picture>
+              <picture>
+                <source
+                  srcset="../images/privat-desk.webp"
+                  type="image/webp"
+                  media="(min-width: 1235px)" />
+                <source srcset="../images/privat-mob.webp" type="image/webp" />
+                <img class="price-part__privat" src="../images/privat-mob.webp" alt="privat"
+              /></picture>
             </div>
           </div>
 
@@ -133,11 +151,42 @@
         <form class="form-registry form-registry--course">
           <label class="form-registry__label">
             <span class="form-registry__name">Твоє імʼя</span>
-            <input class="form-registry__input" type="text" placeholder="Ім’я Прізвище" name="name"/>
+            <input
+              class="form-registry__input"
+              type="text"
+              placeholder="Ім’я Прізвище"
+              name="name"
+            />
           </label>
-          <button type="submit">Записатись</button>
+          <label class="form-registry__label">
+            <span class="form-registry__name">Твій емейл</span>
+            <input class="form-registry__input" type="email" placeholder="Емейл" name="email" />
+          </label>
+          <label class="form-registry__label">
+            <span class="form-registry__name">Твій номер</span>
+            <input class="form-registry__input" type="tel" placeholder="123 45 67" name="phone" />
+          </label>
+          <button class="form-registry__submit" type="submit">Записатись</button>
         </form>
       </div>
+
+      <ul class="sign-up-advantages">
+        <li class="sign-up-advantages__item">
+          <i class="icon-label"></i>
+          <p class="sign-up-advantages__text">БЕЗЛІМІТНА КОСМЕТИКА</p>
+          <i class="icon-label"></i>
+        </li>
+        <li class="sign-up-advantages__item">
+          <i class="icon-label"></i>
+          <p class="sign-up-advantages__text">МОДЕЛІ ДЛЯ ВІДПРАЦЮВАННЯ</p>
+          <i class="icon-label"></i>
+        </li>
+        <li class="sign-up-advantages__item">
+          <i class="icon-label"></i>
+          <p class="sign-up-advantages__text">ІНСТРУМЕНТИ</p>
+          <i class="icon-label"></i>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
