@@ -1,12 +1,22 @@
 .title {
-  font-size: 35px;
-  line-height: 100%;
-  text-align: center;
-  color: $dark;
-  text-transform: uppercase;
+  &,
+  &-light {
+    font-size: 35px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & {
+    color: $dark;
+  }
+
+  &-light {
+    color: $light;
+  }
 
   @media (min-width: $desktop) {
-    & {
+    &, &-light {
       font-size: 70px;
     }
   }
