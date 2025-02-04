@@ -2,16 +2,19 @@
   background-color: $dark;
 
   &__body {
-    //  min-height: 60px;
     margin-bottom: 77px;
     display: flex;
     justify-content: start;
     align-items: center;
   }
   &__logo {
-    display: inline-block;
-    width: 60px;
-    padding-right: 10px;
+    display: block;
+
+    padding: 0px 10px 0px 0px;
+    & img {
+      width: 50px;
+      height: 50px;
+    }
   }
   &__inform {
     height: 70px;
@@ -27,9 +30,17 @@
     font-weight: 400;
     line-height: normal;
   }
-  &__copiright {
-    font-family: $font3;
-    font-size: 14px;
+
+  & .menu__link {
+    color: #828282;
+  }
+}
+
+.copiright {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
 
@@ -38,7 +49,6 @@
     }
   }
 }
-
 .footer__menu,
 .footer__social {
   display: none;
@@ -48,16 +58,30 @@
   .footer {
     &__body {
       margin: 0;
-      justify-content: space-between;
     }
     &__logo {
-      min-width: 90px;
+      padding: 0px 22px 0px 0px;
+      & img {
+        width: 80px;
+        height: 80px;
+      }
     }
     &__inform {
       flex: 0 0 285px;
+      padding: 0px 19px 0px 0px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__nav {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     &__menu {
-      flex: 1 1 auto;
+      flex: 0 1 566px;
+      color: #828282;
     }
 
     &__menu,
@@ -66,24 +90,13 @@
     }
   }
 
-  .footer-menu {
-    &__list {
-      display: flex;
-      justify-content: space-between;
-    }
-    &__item {
-      flex: 1 1 auto;
-    }
-    &__link {
-      display: inline-block;
-      font-size: 15px;
-      color: #828282;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.3s ease 0s;
-      &:hover {
-        text-decoration: underline;
-      }
+
+  .copiright {
+    display: flex;
+    flex-direction: row;
+    &__text {
+      padding-right: 3px;
+      font-size: 14px;
     }
   }
 }
