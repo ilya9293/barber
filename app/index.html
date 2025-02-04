@@ -10,11 +10,300 @@
 
   <body>
 
-=include header.html
+<header class="header">
+<div class="header__container container">
+          <div class="header__body">
+            <a href="#" class="header__logo">
+              <img src="../images/logo2.png" alt="logo" />
+            </a>
+            <nav class="header__menu menu">
+              <div class="menu__list">
+                <div class="menu__item">
+                  <a href="" class="menu__link">про курс</a>
+                </div>
+
+                <div class="menu__item">
+                  <a href="#" class="menu__link">про нас</a>
+                </div>
+                <div class="menu__item">
+                  <a href="#" class="menu__link">тренери</a>
+                </div>
+                <div class="menu__item">
+                  <a href="#" class="menu__link">програма курсу</a>
+                </div>
+                <div class="menu__item">
+                  <a href="#" class="menu__link">адреса</a>
+                </div>
+                
+              </div>
+            </nav>
+            <div class="header__social social">
+              <a href="" class="social__item">
+                <i class="icon-facebook social__icon"></i>
+              </a>
+              <a href="#" class="social__item">
+                <i class="icon-instagram social__icon"></i>
+               
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="bottom-bar__container container">
+            <div class="bottom-bar__list">
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-home bottom-bar__icon"></i>
+                  <p>головна</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-services bottom-bar__icon"></i>
+                  <p>послуги</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-works bottom-bar__icon"></i>
+                  <p>Роботи</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-barbers bottom-bar__icon"></i>
+                  <p>Барбери</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-contacts bottom-bar__icon"></i>
+                  <p>Контакти</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+</header>
+
 
 <main>
-  =include hero.html
-  =include course.html
+    <div class="main__hero hero">
+            <div class="hero__container">
+              <div class="hero__body">
+                <h1 class="hero__title">SHOP ACADEMY</h1>
+                <div class="hero__text">
+                  Наша пристрасть і наше натхнення — це впровадження
+                  найінноваційніших методів в роботі і навчанні, а також ми
+                  прагнемо навчати трендовому лайфстайлу та комунікувати свій
+                  підхід через спостереження за особистим і професійним прогресом
+                  студентів завдяки нашій академії
+                </div>
+                <a href="#" class="hero__button button">Записатись на курс</a>
+              </div>
+            </div>
+            <div class="hero__img ibg">
+             <div class="hero__shedow">
+               <picture>
+                 <source srcset="../images/Banner_2.jpg" media="(min-width: 768px)">
+                 <img src="../images/Banner_1.jpg" alt="">
+              </picture>
+             </div>
+            </div>
+          </div>
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <h2 class="title title--course">КУРС БАРБЕРА В БІЛІЙ ЦЕРКВІ</h2>
+        <ul class="course-info">
+          <li class="course-info__item">
+            <span class="course-info__type">Тривалість</span>
+            <div class="course-info__wraper">
+              <span class="course-info__num">2 </span><span class="course-info__text">МІСЯЦІ</span>
+            </div>
+          </li>
+          <li class="course-info__item">
+            <span class="course-info__type">Годин</span><span class="course-info__num">96+</span>
+          </li>
+          <li class="course-info__item">
+            <span class="course-info__type">Тип занять</span>
+            <div class="course-info__wraper">
+              <span class="course-info__num">80% </span
+              ><span class="course-info__text">ПРАКТИКИ</span>
+            </div>
+          </li>
+          <li class="course-info__item">
+            <span class="course-info__type">Інтенсивінсть</span>
+            <div class="course-info__wraper">
+              <span class="course-info__num">3</span
+              ><span class="course-info__text"> РАЗИ НА ТИЖДЕНЬ</span>
+            </div>
+          </li>
+        </ul>
+  
+        <ul class="course-date">
+          <li class="course-date__item">
+            <i class="icon-scissors"></i>
+            <p class="course-date__text">Найближча дата старту:</p>
+            <div class="course-date__info">
+              <span class="course-date__num">1</span><span class="course-date__month">грудня</span>
+            </div>
+          </li>
+          <li class="course-date__item">
+            <i class="icon-scissors"></i>
+            <p class="course-date__text">Лишилось місць:</p>
+            <div class="course-date__info"><span class="course-date__stat">11/12</span></div>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="box">
+        <h2 class="title">ЗАПИСУЙСЯ НА КУРС ПРЯМО ЗАРАЗ</h2>
+        <p class="sign-up__text">НА ПЕРШОМУ ПРОБНОМУ ЗАНЯТТІ ТИ ВЖЕ ЗМОЖЕШ:</p>
+        <div class="sign-up__box-img">
+          <picture>
+            <source
+              srcset="../images/haircut-desktop.webp"
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source srcset="../images/haircut-mob.webp" type="image/webp" />
+            <img src="../images/haircut-mob.webp" alt="barber" class="sign-up__img" />
+          </picture>
+        </div>
+  
+        <ul class="sign-up__list">
+          <li class="sign-up__item">
+            <p class="sign-up__features">ЗРОБИТИ ПЕРШУ СТРИЖКУ</p>
+            <i class="icon-check"></i>
+          </li>
+          <li class="sign-up__item">
+            <p class="sign-up__features">ПОЗНАЙОМИТИСЬ З УЧНЯМИ ТА ВИКЛАДАЧАМИ</p>
+            <i class="icon-check"></i>
+          </li>
+          <li class="sign-up__item">
+            <p class="sign-up__features">ВІДЧУТИ АТМОСФЕРУ АКАДЕМІЇ</p>
+            <i class="icon-check"></i>
+          </li>
+          <li class="sign-up__item">
+            <p class="sign-up__features">ПОБАЧИТИ ПРОГРАМУ І ФОРМАТ НАВЧАННЯ</p>
+            <i class="icon-check"></i>
+          </li>
+          <li class="sign-up__item">
+            <p class="sign-up__features">ВИЗНАЧИТИСЬ, ЧИ ПІДХОДИТЬ ТОБІ НАША АКАДЕМІЯ</p>
+            <i class="icon-check"></i>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="box">
+        <h2 class="title">РЕЄСТРАЦІЯ НА КУРС</h2>
+        <div class="price__container">
+          <div class="price__box">
+            <ul class="price-list">
+              <li class="price-list__item">
+                <p class="price-list__title">Повна вартість</p>
+                <p class="price-list__cost">
+                  <span class="price-list__price">26 000 </span>
+                  <span class="price-list__currency">ГРН</span>
+                </p>
+              </li>
+              <li class="price-list__item">
+                <div class="price-list__box-title">
+                  <p class="price-list__title">
+                    <span class="price-list__title-name">Одним платежем</span
+                    ><span class="price-list__sub-title">26 000 ГРН</span>
+                  </p>
+                  <div class="price-list__discount-mob"><span>-10%</span></div>
+                </div>
+  
+                <p class="price-list__cost">
+                  <span class="price-list__price">23 400 </span>
+                  <span class="price-list__currency">ГРН</span>
+                </p>
+              </li>
+              <li class="price-list__item">
+                <div class="price-list__discount-desk"><span>-10%</span></div>
+              </li>
+            </ul>
+  
+            <div class="price-part">
+              <div class="price-part__text">Оплата частинами</div>
+              <div class="price-part__cost">
+                <span>6500 </span><span class="price-part__currency">ГРН</span>
+              </div>
+              <div class="price-part__icons">
+                <picture>
+                  <source
+                    srcset="../images/mono-desk.webp"
+                    type="image/webp"
+                    media="(min-width: 1235px)"
+                  />
+                  <source srcset="../images/mono-mob.webp" type="image/webp" />
+                  <img class="price-part__mono" src="../images/mono-mob.webp" alt="mono" />
+                </picture>
+                <picture>
+                  <source
+                    srcset="../images/privat-desk.webp"
+                    type="image/webp"
+                    media="(min-width: 1235px)" />
+                  <source srcset="../images/privat-mob.webp" type="image/webp" />
+                  <img class="price-part__privat" src="../images/privat-mob.webp" alt="privat"
+                /></picture>
+              </div>
+            </div>
+  
+            <p class="price-note">
+              <span class="price-note__text">
+                Щомісячний платіж при розрахунку частинами на виплат без комісії і % від monobank та
+                ПриватБанк
+              </span>
+            </p>
+          </div>
+  
+          <form class="form-registry form-registry--course">
+            <label class="form-registry__label">
+              <span class="form-registry__name">Твоє імʼя</span>
+              <input
+                class="form-registry__input"
+                type="text"
+                placeholder="Ім’я Прізвище"
+                name="name"
+              />
+            </label>
+            <label class="form-registry__label">
+              <span class="form-registry__name">Твій емейл</span>
+              <input class="form-registry__input" type="email" placeholder="Емейл" name="email" />
+            </label>
+            <label class="form-registry__label">
+              <span class="form-registry__name">Твій номер</span>
+              <input class="form-registry__input" type="tel" placeholder="123 45 67" name="phone" />
+            </label>
+            <button class="form-registry__submit" type="submit">Записатись</button>
+          </form>
+        </div>
+  
+        <ul class="sign-up-advantages">
+          <li class="sign-up-advantages__item">
+            <i class="icon-label"></i>
+            <p class="sign-up-advantages__text">БЕЗЛІМІТНА КОСМЕТИКА</p>
+            <i class="icon-label"></i>
+          </li>
+          <li class="sign-up-advantages__item">
+            <i class="icon-label"></i>
+            <p class="sign-up-advantages__text">МОДЕЛІ ДЛЯ ВІДПРАЦЮВАННЯ</p>
+            <i class="icon-label"></i>
+          </li>
+          <li class="sign-up-advantages__item">
+            <i class="icon-label"></i>
+            <p class="sign-up-advantages__text">ІНСТРУМЕНТИ</p>
+            <i class="icon-label"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
   <section class="section choice">
     <!-- <div class="container"> -->
     <h2 class="title-light">ЧОМУ ОБИРАЮТЬ НАС</h2>
@@ -108,7 +397,99 @@
   
 </main>
 
-=include footer.html
+<footer class="footer">
+
+  <div class="footer__container container">
+
+    <div class="footer__body">
+
+      <a href="#" class="footer__logo">
+
+        <img src="./img/Logo1.png" alt="logo" />
+
+      </a>
+
+      <div class="footer__inform">
+
+        <div class="footer__text">Офіційний дистрибʼютор впевненості</div>
+
+        <div class="footer__copiright">
+
+          <p><span>©Shop</span>academy</p>
+
+          <p>2024</p>
+
+        </div>
+
+      </div>
+
+      <nav class="footer__menu footer-menu">
+
+        <div class="footer-menu__list">
+
+          <div class="footer-menu__item">
+
+            <a href="#" class="footer-menu__link">про курс</a>
+
+          </div>
+
+          <div class="footer-menu__item">
+
+            <a href="#" class="footer-menu__link">про нас</a>
+
+          </div>
+
+          <div class="footer-menu__item">
+
+            <a href="#" class="footer-menu__link">тренери</a>
+
+          </div>
+
+          <div class="footer-menu__item">
+
+            <a href="#" class="footer-menu__link">програма курсу</a>
+
+          </div>
+
+          <div class="footer-menu__item">
+
+            <a href="#" class="footer-menu__link">адреса</a>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <div class="footer__social social">
+
+      <div class="social__body">
+
+           <a href="#" class="social__item">
+
+          <i class="icon-facebook social__icon-social"></i>
+
+        </a>
+
+        <a href="#" class="social__item">
+
+          <i class="icon-instagram social__icon-social"></i>
+
+        </a>
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
 <script src="js/main.min.js"></script>
 </body>
 
