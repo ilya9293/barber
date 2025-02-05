@@ -107,7 +107,7 @@ function watching() {
 }
 
 function cleanDist() {
-  return src("dist").pipe(clean());
+  return src("docs").pipe(clean());
 }
 
 function building() {
@@ -121,10 +121,10 @@ function building() {
       "app/fonts/*.*",
       "app/iconFont/*.*",
       "app/js/main.min.js",
-      "app/**/*.html",
+      "app/*.html",
     ],
     { base: "app" }
-  ).pipe(dest("dist"));
+  ).pipe(dest("docs"));
 }
 
 exports.styles = styles;
