@@ -36,7 +36,13 @@
     width: 100%;
     background-color: $light;
     padding: 10px;
+    padding-bottom: 40px;
     border-radius: 10px;
+    height: auto;
+  }
+
+  &__content {
+    height: 100%;
   }
 
   &__title {
@@ -68,8 +74,12 @@
   }
 
   &__img {
+    max-width: 147px;
+    height: 150px;
+    object-fit: cover;
     position: relative;
     z-index: 10;
+    border-radius: 10px;
   }
 
   &__text {
@@ -77,11 +87,72 @@
     font-size: 12px;
     color: $dark;
   }
+
+  @media (min-width: $tablet) {
+    &__item {
+      max-width: 500px;
+      padding: 17px 20px;
+      padding-bottom: 40px;
+    }
+
+    &__box-img {
+      max-width: 75%;
+      margin: 19px auto 0;
+    }
+
+    &__box-img::after {
+      max-width: 98.3%;
+      width: 100%;
+    }
+
+    &__img {
+      max-width: 98.3%;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__container {
+      padding-bottom: 35px;
+    }
+
+    &__container::after,
+    &__container::before {
+      width: 222px;
+    }
+
+    &__item {
+      max-width: 794px;
+      padding-bottom: 68px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__box-img {
+      max-width: 600px;
+    }
+
+    &__img {
+      max-width: 590px;
+      height: 300px;
+    }
+
+    &__text {
+      margin-top: 30px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
 }
 
 .choice-swiper {
   margin-top: 11px;
-  height: 376px;
+
+  @media (min-width: $desktop) {
+    margin-top: 33px;
+  }
 }
 
 .choice-pagination {
@@ -103,5 +174,52 @@
 
   &-bullet-active {
     background-color: $dark;
+  }
+}
+
+.choice-navigation {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 20;
+  transform: translateX(-50%);
+
+  &-next,
+  &-prev {
+    width: 20px;
+    height: 20px;
+    background-color: #067f8e;
+    border: none;
+  }
+
+  &-next i,
+  &-prev i {
+    font-size: 16px;
+    color: $light;
+  }
+
+  &-prev {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $desktop) {
+    & {
+      bottom: 15px;
+      gap: 40px;
+    }
+
+    &-next,
+    &-prev {
+      width: 30px;
+      height: 30px;
+    }
+
+    &-next i,
+    &-prev i {
+      font-size: 22px;
+    }
   }
 }
