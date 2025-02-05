@@ -1,4 +1,4 @@
-.box {
+.box:not(:last-child) {
   margin-bottom: 24px;
 
   @media (min-width: $desktop) {

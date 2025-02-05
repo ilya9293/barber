@@ -7,13 +7,6 @@ const swiper = new Swiper(".choice-swiper", {
   slidesPerView: "auto",
   loop: true,
 
-  pagination: {
-    el: ".choice-pagination",
-    bulletClass: "choice-pagination-bullet",
-    bulletActiveClass: "choice-pagination-bullet-active",
-    clickable: true,
-  },
-
   coverflowEffect: {
     rotate: 0,
     slideShadows: false,
@@ -22,18 +15,27 @@ const swiper = new Swiper(".choice-swiper", {
     modifier: 1,
   },
 
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
+  pagination: {
+    el: ".choice-pagination",
+    bulletClass: "choice-pagination-bullet",
+    bulletActiveClass: "choice-pagination-bullet-active",
+    clickable: true,
+  },
 
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-  //   scrollbar: {
-  //     el: ".swiper-scrollbar",
-  //     draggable: true,
-  //   },
+  navigation: {
+    nextEl: ".choice-navigation-next",
+    prevEl: ".choice-navigation-prev",
+  },
+
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+    },
+    1235: {
+      spaceBetween: 70,
+      coverflowEffect: {
+        depth: 129,
+      },
+    },
+  },
 });
