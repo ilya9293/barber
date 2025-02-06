@@ -39,3 +39,18 @@ const swiper = new Swiper(".choice-swiper", {
     },
   },
 });
+
+const choiceFeatures = document.querySelector(".choice-features");
+choiceFeatures.addEventListener("click", (e) => {
+  if (e.target.classList.contains("choice-features__slider")) {
+    const activeClass = "choice-features__wraper--active";
+    const choiceFeaturesWraper = e.target.parentElement;
+    if (choiceFeaturesWraper.classList.contains(activeClass)) {
+      choiceFeaturesWraper.classList.remove(activeClass);
+      choiceFeaturesWraper.style.height = "";
+    } else {
+      choiceFeaturesWraper.classList.add(activeClass);
+      choiceFeaturesWraper.style.height = choiceFeaturesWraper.scrollHeight + "px";
+    }
+  }
+});
