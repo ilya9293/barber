@@ -10,8 +10,8 @@
   }
   &__logo {
     display: inline-block;
-    &img {
-      width: 102px;
+    & img {
+      max-width: 102px;
       height: 37px;
     }
   }
@@ -22,22 +22,7 @@
   }
 }
 
-.social {
-  display: flex;
-  align-items: center;
-  &__item {
-    display: block;
-    padding: 0px 25px;
-  }
-  &__icon {
-    display: block;
-    color: $light;
-    font-size: 30px;
-    &:hover {
-      color: $light-blue;
-    }
-  }
-}
+
 
 
 
@@ -66,16 +51,7 @@
       }
   }
 
-  .social {
-    justify-content: end;
-    &__item {
-      display: inline-block;
-      padding: 0px;
-      &:not(:last-child) {
-        padding-right: 10px;
-      }
-    }
-  }
+ 
   .bottom-bar {
     display: none;
   }
