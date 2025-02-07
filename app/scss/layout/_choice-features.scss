@@ -1,0 +1,72 @@
+.choice-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: $light;
+
+  &__item {
+  }
+
+  &__wraper-title {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 10px;
+    overflow: auto;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__wraper {
+    position: relative;
+    border-top: 1px solid $light;
+    background: rgba(0, 0, 0, 0.2);
+    height: 80px;
+    overflow: hidden;
+    padding-bottom: 47px;
+    transition: height 0.3s linear;
+  }
+
+  &__text {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    gap: 10px;
+    font-size: 23px;
+    padding: 14px 5px 10px;
+    background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
+    width: 100%;
+    z-index: 10;
+  }
+
+  &__item:not(:first-child):nth-child(odd) &__slider {
+    background: linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%);
+  }
+
+  &__slider i {
+    pointer-events: none;
+  }
+
+  &__wraper--active &__slider i {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $small) {
+    grid-template-columns: repeat(2, 177px);
+    justify-content: space-between;
+  }
+
+  &__item:first-child {
+    grid-column: span 2;
+  }
+}
