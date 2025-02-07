@@ -6,11 +6,18 @@
   &__item {
   }
 
+  &__wraper-title {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 10px;
+    overflow: auto;
+  }
+
   &__title {
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
-    padding: 15px 10px;
   }
 
   &__wraper {
@@ -42,6 +49,10 @@
     z-index: 10;
   }
 
+  &__item:not(:first-child):nth-child(odd) &__slider {
+    background: linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%);
+  }
+
   &__slider i {
     pointer-events: none;
   }
@@ -52,9 +63,10 @@
 
   @media (min-width: $small) {
     grid-template-columns: repeat(2, 177px);
+    justify-content: space-between;
   }
 
-//   &__item:first-child {
-//     grid-template: 2 span;
-//   }
+  &__item:first-child {
+    grid-column: span 2;
+  }
 }
