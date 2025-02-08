@@ -56,3 +56,11 @@
     display: none;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .header {
+    &__logo {
+      padding: 0px 80px 0px 0px;
+    }
+  }
+}

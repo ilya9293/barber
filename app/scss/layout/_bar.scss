@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 4;
+  z-index: 50;
   min-height: 60px;
 
   &__list {
@@ -13,7 +13,7 @@
   }
 
   &__item {
-   width: 48px;
+    width: 48px;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -30,9 +30,23 @@
       width: 240%;
       background-color: $light-blue;
     }
-    &:hover::after, 
+    &:hover::after,
     &:active::after {
       display: block;
+    }
+
+    &:hover,
+    &:active {
+      &__icon {
+        color: $light-blue;
+      }
+    }
+
+    &:hover .bottom-bar__link,
+    &:active .bottom-bar__link,
+    &:hover .bottom-bar__icon,
+    &:active .bottom-bar__icon {
+      color: $light-blue;
     }
   }
 
@@ -40,10 +54,6 @@
     font-size: 30px;
     margin: 10px 0px;
     color: $light;
-    &:hover,
-    &:active {
-      color: $light-blue;
-    }
   }
 
   &__link {
@@ -58,9 +68,5 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease 0s;
-    &:hover,
-    &:active {
-      color: $light-blue;
-    }
   }
 }

@@ -5,37 +5,21 @@
    &__body {
     display: flex;
     justify-content: end;
-      
+      align-items: center;
   }
 
   &__item {
-    display: inline-block;
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
     padding: 0px;
     &:not(:last-child) {
-        padding: 0px 49px 0px 0px;
+        margin: 0px 49px 0px 0px;
       }
   }
 }
 
-// .social {
-//   display: flex;
-//   align-items: center;
-//   padding: 0px;
 
-
-//   &__item {
-//     display: block;
-//     padding: 0px 25px;
-//   }
-//   &__icon {
-//     display: block;
-//     color: $light;
-//     font-size: 30px;
-//     &:hover {
-//       color: $light-blue;
-//     }
-//   }
-// }
 
 @media screen and (min-width: 992px) {
     .social {
@@ -48,7 +32,7 @@
       display: inline-block;
       padding: 0px;
         &:not(:last-child) {
-        padding: 0px 10px 0px 0px;
+        margin: 0px 10px 0px 0px;
       }
     }
   }
