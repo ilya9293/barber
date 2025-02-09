@@ -178,7 +178,7 @@
   position: absolute;
   left: 50%;
   bottom: 10px;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 12px;
   z-index: 20;
@@ -204,6 +204,7 @@
 
   @media (min-width: $desktop) {
     & {
+      display: flex;
       bottom: 15px;
       gap: 40px;
     }

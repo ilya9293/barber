@@ -164,7 +164,18 @@
           </label>
           <label class="form-registry__label">
             <span class="form-registry__name">Твій номер</span>
-            <input class="form-registry__input" type="tel" placeholder="123 45 67" name="phone" />
+            <input
+              class="form-registry__input form-registry__input--phone"
+              type="tel"
+              placeholder="123 45 67"
+              name="phone"
+            />
+            <div class="form-registry__wraper-flag">
+              <svg class="form-registry__icon-flag">
+                <use href="../icons/sprite.svg#flag"></use>
+              </svg>
+              <span class="form-registry__phone-code">+380</span>
+            </div>
           </label>
           <button class="form-registry__submit" type="submit">Записатись</button>
         </form>

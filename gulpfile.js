@@ -58,7 +58,7 @@ function images() {
 }
 
 function sprite() {
-  return src("app/images/*.svg")
+  return src("app/icons/src/*.svg")
     .pipe(
       svgSprite({
         mode: {
@@ -69,7 +69,7 @@ function sprite() {
         },
       })
     )
-    .pipe(dest("app/images"));
+    .pipe(dest("app/icons"));
 }
 
 function scripts() {
@@ -117,7 +117,7 @@ function building() {
       "!app/images/**/*.html",
       "app/images/*.*",
       "!app/images/*.svg",
-      //  'app/images/sprite.svg',
+       'app/icons/sprite.svg',
       "app/fonts/*.*",
       "app/iconFont/*.*",
       "app/js/main.min.js",

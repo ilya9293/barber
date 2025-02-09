@@ -73,9 +73,36 @@
     cursor: pointer;
   }
 
-  &__submit:hover, &__submit:focus {
+  &__input--phone {
+    padding-left: 126px;
+  }
+
+  &__submit:hover,
+  &__submit:focus {
     background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
     color: $light;
+  }
+
+  &__wraper-flag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 34px;
+    transform: translateY(-50%);
+    height: 100%;
+    padding-right: 10px;
+    border-right: 1px solid #0c97ab;
+  }
+
+  &__icon-flag {
+    width: 30px;
+    height: 20px;
+  }
+
+  &__phone-code {
+    font-size: 16px;
   }
 
   @media (min-width: $desktop) {
@@ -95,6 +122,19 @@
     &__submit {
       height: 60px;
       font-size: 20px;
+    }
+
+    &__input--phone {
+      padding-left: 134px;
+    }
+
+    &__icon-flag {
+      width: 35px;
+      height: 30px;
+    }
+
+    &__phone-code {
+      font-size: 18px;
     }
   }
 }

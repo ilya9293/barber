@@ -6,6 +6,9 @@ const swiper = new Swiper(".choice-swiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   loop: true,
+  autoplay: {
+    delay: 6000,
+  },
 
   coverflowEffect: {
     rotate: 0,
