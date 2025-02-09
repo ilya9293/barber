@@ -1,7 +1,4 @@
 .choice-gallery {
-  & {
-  }
-
   &__container {
     position: relative;
     padding-bottom: 25px;
@@ -12,7 +9,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 97px;
+    width: 70px;
     height: 100%;
     z-index: 15;
     pointer-events: none;

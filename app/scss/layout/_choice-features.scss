@@ -43,14 +43,12 @@
     bottom: 0;
     gap: 10px;
     font-size: 23px;
-    padding: 14px 5px 10px;
-    background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
+    padding: 14px 5px 5px;
+    background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+      linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+      linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
     width: 100%;
     z-index: 10;
-  }
-
-  &__item:not(:first-child):nth-child(odd) &__slider {
-    background: linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%);
   }
 
   &__slider i {
@@ -64,9 +62,58 @@
   @media (min-width: $small) {
     grid-template-columns: repeat(2, 177px);
     justify-content: space-between;
+
+    &__item:first-child {
+      grid-column: span 2;
+    }
+
+    &__item:not(:first-child):nth-child(odd) &__slider {
+      background: linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%),
+        linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%),
+        linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%);
+    }
   }
 
-  &__item:first-child {
-    grid-column: span 2;
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    & &__item:nth-child(odd) &__slider {
+      background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+        linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+        linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
+    }
+    & &__item:nth-child(even) &__slider {
+      background: linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
+        linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%),
+        linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
+        linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%),
+        linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
+        linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__wraper-title {
+      height: 58px;
+      padding: 0 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 18px;
+      padding: 4px 20px;
+    }
+
+    &__wraper {
+      padding-bottom: 57px;
+    }
+
+    &__slider {
+      padding: 29px 20px 5px 20px;
+    }
   }
 }
