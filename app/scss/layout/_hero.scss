@@ -2,33 +2,21 @@
   width: 100%;
   position: relative;
   z-index: 5;
+  background-image: url("../../images/Banner_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
 
-&__container {
-     width: 100%;
-  padding: 0 0px 0px 70px;
-  margin: 0 auto;
-
-  @media screen and (min-width: $mobile) {
-    & {
-      max-width: $mobile;
-        padding: 0 15px;
-
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    & {
-      max-width: $tablet;
-       padding: 0 15px;
-    }
-  }
-
-    @media screen and (min-width: $desktop) {
-    & {
-      max-width: $desktop;
-       padding: 0 15px;
-    }
-  }
-
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 22.47%,
+      rgba(102, 102, 102, 0) 71.67%
+    );
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   &__body {
@@ -82,50 +70,50 @@
   }
 }
 
+// .button {
+// }
 
-.button {
-}
+// .ibg {
+//   position: relative;
 
-.ibg {
-  position: relative;
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     inset: 0;
+//     background-image: linear-gradient(
+//       90deg,
+//       rgba(0, 0, 0, 0.5) 22.47%,
+//       rgba(102, 102, 102, 0) 71.67%
+//     );
+//     background-color: rgba(0, 0, 0, 0.4);
+//   }
+// }
 
-  &::after {
-    position: absolute;
-    content: "";
-    inset: 0;
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.5) 22.47%,
-      rgba(102, 102, 102, 0) 71.67%
-    );
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
+// .ibg img {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   object-fit: cover;
+// }
 
-.ibg img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
+// .hero__img {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   z-index: 0;
+//   object-fit: cover;
+// }
 
-.hero__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  object-fit: cover;
-}
-
-.hero__img img {
-}
+// .hero__img img {
+// }
 
 @media (min-width: 768px) {
   .hero {
+    background-image: url("../../images/Banner_2.jpg");
     &__body {
       max-width: 100%;
       padding: 95px 0px 110px 0px;
@@ -158,7 +146,6 @@
       line-height: 114%;
     }
     &__text {
-      
       font-size: 18px;
       padding-bottom: 121px;
     }
@@ -167,9 +154,7 @@
 
 @media (min-width: 1020px) {
   .hero {
-   
     &__text {
-  
       font-size: 20px;
       padding-bottom: 121px;
       line-height: 125%;

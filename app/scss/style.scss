@@ -9,6 +9,8 @@
 @import "./base/section";
 @import "./components/box";
 @import "./components/title";
+@import "./components/menu";
+@import "./components/social";
 @import "./layout/course-info";
 @import "./layout/course-date";
 @import "./layout/sign-up";
@@ -25,3 +27,4 @@
 @import "./layout/_choice.scss";
 @import "./layout/_choice-gallery.scss";
 @import "./layout/choice-features";
+@import "./layout/bar";

@@ -1,0 +1,39 @@
+
+.social {
+  font-size: 30px;
+  color: $light;
+   &__body {
+    display: flex;
+    justify-content: end;
+      align-items: center;
+  }
+
+  &__item {
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+    padding: 0px;
+    &:not(:last-child) {
+        margin: 0px 49px 0px 0px;
+      }
+  }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .social {
+    justify-content: end;
+   &__body {
+    display: flex;
+    justify-content: end;
+  }
+    &__item {
+      display: inline-block;
+      padding: 0px;
+        &:not(:last-child) {
+        margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+}
