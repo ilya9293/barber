@@ -3,9 +3,6 @@
   grid-template-columns: 1fr;
   color: $light;
 
-  &__item {
-  }
-
   &__wraper-title {
     display: flex;
     align-items: center;
@@ -55,7 +52,7 @@
     pointer-events: none;
   }
 
-  &__wraper--active &__slider i {
+  .slider-active &__slider i {
     transform: rotate(180deg);
   }
 
