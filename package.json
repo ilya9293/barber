@@ -25,7 +25,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "swiper": "^11.2.2"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1"
