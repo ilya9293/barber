@@ -7,9 +7,7 @@
     margin-top: 15px;
   }
 
-  &__container::after
-//   &__container::before
-  {
+  &__container::after {
     content: "";
     display: block;
     position: absolute;
@@ -24,12 +22,6 @@
     top: 0;
     right: 0;
   }
-
-  //   &__container::before {
-  //     top: 0;
-  //     left: 0;
-  //     transform: rotate(-180deg);
-  //   }
 
   &__item {
     width: 100%;
@@ -76,6 +68,35 @@
   &__title {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop) {
+    &__container::after {
+      width: 183px;
+    }
+
+    &__item {
+      max-width: 310px;
+    }
+
+    &__box-img::after {
+      width: 97%;
+    }
+
+    &__img {
+      width: 97%;
+      margin: 0 auto 0 0;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__wraper {
+      max-width: 97%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
 }
 .teachers-swiper {
 }
@@ -103,5 +124,52 @@
   &__text {
     font-size: 12px;
     line-height: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    &__item {
+      padding-left: 25px;
+    }
+
+    &__item::before {
+      top: 8px;
+      left: 10px;
+      width: 4px;
+      height: 4px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: normal;
+    }
+  }
+}
+
+.teachers-navigation {
+  & {
+    position: absolute;
+    top: 110px;
+    right: -20px;
+    z-index: 20;
+  }
+
+  &-next {
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+  }
+
+  &-next i::before {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+   & {
+      top: 184px;
+    }
+
+    &-next {
+      font-size: 100px;
+    }
   }
 }
