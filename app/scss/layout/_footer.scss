@@ -13,7 +13,7 @@
     flex: 0 0 auto;
     display: block;
 
-    padding: 12px 10px 12px 0px;
+    padding: 13px 10px 12px 0px;
     & img {
       width: 50px;
       min-height: 50px;
@@ -21,10 +21,10 @@
     }
   }
   &__inform {
-    height: 70px;
+    height: 75px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #828282;
     text-transform: uppercase;
   }
@@ -71,6 +71,7 @@
     &__logo {
       padding: 10px 22px 10px 0px;
       & img {
+        
         max-width: 80px;
         width: 100%;
         min-height: 80px;
@@ -79,6 +80,7 @@
     }
     &__inform {
       flex: 0 0 285px;
+      justify-content: space-between;
       padding: 0px 19px 0px 0px;
     }
     &__text {
