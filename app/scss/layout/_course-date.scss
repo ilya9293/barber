@@ -12,7 +12,7 @@
   }
 
   &__text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 100%;
     margin-left: 4px;
   }
@@ -52,9 +52,13 @@
     font-size: 21px;
   }
 
-  @media (min-width: 390px) {
+  @media (min-width: $small) {
     & {
       justify-content: space-between;
+    }
+
+    &__text {
+      font-size: 15px;
     }
   }
 

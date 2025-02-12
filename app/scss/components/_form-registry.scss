@@ -57,6 +57,7 @@
   }
 
   &__submit {
+    position: relative;
     width: 100%;
     height: 50px;
     border-radius: 50px;
@@ -71,11 +72,63 @@
     color: #067f8e;
     transition: $anim;
     cursor: pointer;
+    overflow: hidden;
   }
 
-  &__submit:hover, &__submit:focus {
+  &__submit span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__submit::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: $anim;
+  }
+
+  &__submit:hover,
+  &__submit:focus {
     color: $light;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  //   &__submit:hover,
+  //   &__submit:focus {
+  //     background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
+  //     color: $light;
+  //   }
+
+  &__input--phone {
+    padding-left: 120px;
+  }
+
+  &__wraper-flag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 34px;
+    transform: translateY(-50%);
+    height: 100%;
+    padding-right: 10px;
+    border-right: 1px solid #0c97ab;
+  }
+
+  &__icon-flag {
+    width: 30px;
+    height: 20px;
+  }
+
+  &__phone-code {
+    font-size: 16px;
   }
 
   @media (min-width: $desktop) {
@@ -95,6 +148,19 @@
     &__submit {
       height: 60px;
       font-size: 20px;
+    }
+
+    &__input--phone {
+      padding-left: 130px;
+    }
+
+    &__icon-flag {
+      width: 35px;
+      height: 30px;
+    }
+
+    &__phone-code {
+      font-size: 18px;
     }
   }
 }

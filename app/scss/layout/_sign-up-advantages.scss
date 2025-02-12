@@ -10,10 +10,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
     padding: 2.5px 32px;
     border-radius: 50px;
     color: $light;
+    background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
   }
 
   &__text {
@@ -28,11 +28,14 @@
       flex-direction: row;
       justify-content: space-between;
       gap: 20px;
+      background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
     }
 
     &__item {
       flex: 386px;
       padding: 8px 20px;
+      outline: 20px solid white;
+      background: none;
     }
 
     &__text {

@@ -11,85 +11,51 @@
   <body>
 
 <header class="header">
-<div class="header__container container">
-          <div class="header__body">
-            <a href="#" class="header__logo">
-              <img src="./images/logo2.png" alt="logo" />
-            </a>
-            <nav class="header__menu menu">
-              <div class="menu__list">
-                <div class="menu__item">
-                  <a href="" class="menu__link">про курс</a>
-                </div>
+  <div class="header__container container">
+    <div class="header__body">
+      <a href="#" class="header__logo">
+        <img src="./images/Logo_Header.svg" alt="logo" />
+      </a>
+      <div class="header__nav">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="" class="menu__link">про курс</a>
+            </li>
 
-                <div class="menu__item">
-                  <a href="#" class="menu__link">про нас</a>
-                </div>
-                <div class="menu__item">
-                  <a href="#" class="menu__link">тренери</a>
-                </div>
-                <div class="menu__item">
-                  <a href="#" class="menu__link">програма курсу</a>
-                </div>
-                <div class="menu__item">
-                  <a href="#" class="menu__link">адреса</a>
-                </div>
-                
-              </div>
-            </nav>
-            <div class="header__social social">
-              <a href="" class="social__item">
-                <i class="icon-facebook social__icon"></i>
-              </a>
-              <a href="#" class="social__item">
-                <i class="icon-instagram social__icon"></i>
-               
-              </a>
-            </div>
+            <li class="menu__item">
+              <a href="#" class="menu__link">про нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">тренери</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">програма курсу</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">адреса</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__social social">
+          <div class="social__body">
+            <a href="" class="social__item">
+              <i class="icon-facebook social__icon"></i>
+            </a>
+            <a href="#" class="social__item">
+              <i class="icon-instagram social__icon"></i>
+            </a>
           </div>
         </div>
-        <div class="bottom-bar">
-          <div class="bottom-bar__container container">
-            <div class="bottom-bar__list">
-              <div class="bottom-bar__item">
-                <a href="" class="bottom-bar__link">
-                  <i class="icon-home bottom-bar__icon"></i>
-                  <p>головна</p></a
-                >
-              </div>
-              <div class="bottom-bar__item">
-                <a href="" class="bottom-bar__link">
-                  <i class="icon-services bottom-bar__icon"></i>
-                  <p>послуги</p></a
-                >
-              </div>
-              <div class="bottom-bar__item">
-                <a href="" class="bottom-bar__link">
-                  <i class="icon-works bottom-bar__icon"></i>
-                  <p>Роботи</p></a
-                >
-              </div>
-              <div class="bottom-bar__item">
-                <a href="" class="bottom-bar__link">
-                  <i class="icon-barbers bottom-bar__icon"></i>
-                  <p>Барбери</p></a
-                >
-              </div>
-              <div class="bottom-bar__item">
-                <a href="" class="bottom-bar__link">
-                  <i class="icon-contacts bottom-bar__icon"></i>
-                  <p>Контакти</p></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
 
 <main>
     <div class="main__hero hero">
-            <div class="hero__container">
+            <div class="hero__container container">
               <div class="hero__body">
                 <h1 class="hero__title">SHOP ACADEMY</h1>
                 <div class="hero__text">
@@ -102,14 +68,7 @@
                 <a href="#" class="hero__button button">Записатись на курс</a>
               </div>
             </div>
-            <div class="hero__img ibg">
-             <div class="hero__shedow">
-               <picture>
-                 <source srcset="./images/Banner_2.jpg" media="(min-width: 768px)">
-                 <img src="./images/Banner_1.jpg" alt="">
-              </picture>
-             </div>
-            </div>
+           
           </div>
   <section class="section">
     <div class="container">
@@ -277,9 +236,20 @@
             </label>
             <label class="form-registry__label">
               <span class="form-registry__name">Твій номер</span>
-              <input class="form-registry__input" type="tel" placeholder="123 45 67" name="phone" />
+              <input
+                class="form-registry__input form-registry__input--phone"
+                type="tel"
+                placeholder="096 123 45 67"
+                name="phone"
+              />
+              <div class="form-registry__wraper-flag">
+                <svg class="form-registry__icon-flag">
+                  <use href="./icons/sprite.svg#flag"></use>
+                </svg>
+                <span class="form-registry__phone-code">+38</span>
+              </div>
             </label>
-            <button class="form-registry__submit" type="submit">Записатись</button>
+            <button class="form-registry__submit" type="submit"><span>Записатись</span></button>
           </form>
         </div>
   
@@ -391,19 +361,19 @@
     <div class="container">
       <div class="box">
         <h2 class="title-light">ЩО ОТРИМАЄШ НА КУРСІ</h2>
-        <ul class="choice-features">
+        <ul class="choice-features" id="course-features">
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-               <h4 class="choice-features__title">ВИВЧИШ БАЗУ ТА СКЛАДНІ ТЕХНІКИ</h4>
+              <h4 class="choice-features__title">ВИВЧИШ БАЗУ ТА СКЛАДНІ ТЕХНІКИ</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
                 Після проходження курсу ти отримаєш чітке розуміння і опануєш базові техніки стрижки
                 які необхідні для роботи сучасному майстру,навчишся підбирати стрижку відповідно до
                 кісткової будови,пропорцій обличчя та структури волосся,що надасть міцний фундамент
-                для професійної кар єри
+                для професійної кар'єри
               </p>
-              <div class="choice-features__slider">
+              <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
@@ -412,14 +382,14 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-               <h4 class="choice-features__title">СФОРМУЄШ ПОРТФОЛІО</h4>
+              <h4 class="choice-features__title">СФОРМУЄШ ПОРТФОЛІО</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
                 Отримаєш потужне професійне портфоліо. Після курсу в тебе будуть фото крутих робіт,
                 які покажуть твій професіоналізм.
               </p>
-              <div class="choice-features__slider">
+              <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
@@ -435,7 +405,7 @@
                 Отримаєш досвід роботи з реальними клієнтами. Ми забезпечуємо моделями для
                 відпрацювання навичок. Кожна модель - твій потенційний клієнт
               </p>
-              <div class="choice-features__slider">
+              <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
@@ -444,7 +414,7 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-               <h4 class="choice-features__title">ДИПЛОМ АКАДЕМІЇ ТА СЕРТИФІКАТ КССК</h4>
+              <h4 class="choice-features__title">ДИПЛОМ АКАДЕМІЇ ТА СЕРТИФІКАТ КССК</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
@@ -452,7 +422,7 @@
                 міжнародний сертифікат - який дає можливість працювати в країнах Європи, Азії,
                 Америки.
               </p>
-              <div class="choice-features__slider">
+              <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
@@ -461,14 +431,14 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-               <h4 class="choice-features__title">ПРАЦЕВЛАШТУВАННЯ</h4>
+              <h4 class="choice-features__title">ПРАЦЕВЛАШТУВАННЯ</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
                 Ще до випуску студенти отримують пропозиції співпраці від салонів краси та
                 барбершопів: Beauty Rehab, Backstage, Yeezy, 365 Salon.
               </p>
-              <div class="choice-features__slider">
+              <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
@@ -476,6 +446,590 @@
             </div>
           </li>
         </ul>
+      </div>
+      <div class="box">
+        <h2 class="title-light">ДЛЯ КОГО ПІДІЙДЕ ЦЕЙ КУРС</h2>
+        <ul class="choice-features" id="course-fit">
+          <li class="choice-features__item"></li>
+          <li class="choice-features__item">
+            <div class="choice-features__wraper-title">
+              <h4 class="choice-features__title">тим, хто немає досвіду у сфері барберінгу:</h4>
+            </div>
+            <div class="choice-features__wraper">
+              <p class="choice-features__text">
+                Якщо ти тільки починають свій шлях у перукарському мистецтві і не маєш попереднього
+                досвіду. Курс надасть необхідні базові знання та навички, щоб успішно почати кар'єру в
+                цій галузі.
+              </p>
+              <div class="choice-features__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="choice-features__item">
+            <div class="choice-features__wraper-title">
+              <h4 class="choice-features__title">Тим, хто прагне змінити кар’єру:</h4>
+            </div>
+            <div class="choice-features__wraper">
+              <p class="choice-features__text">
+                Працюєш в іншій галузі, але хочеш змінити професію на щось більш творче та цікаве?
+                Отримай нові навички та почни новий етап у своєму житті, ставши професійним барбером.
+              </p>
+              <div class="choice-features__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="choice-features__item">
+            <div class="choice-features__wraper-title">
+              <h4 class="choice-features__title">Випускникам шкіл та коледжів:</h4>
+            </div>
+            <div class="choice-features__wraper">
+              <p class="choice-features__text">
+                Щойно закінчилось навчання і шукаєш цікаву та перспективну професію з високим попитом?
+                Почни кар'єру у сфері краси та моди, ставши професійним барбером!
+              </p>
+              <div class="choice-features__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="choice-features__item">
+            <div class="choice-features__wraper-title">
+              <h4 class="choice-features__title">Перукарям універсалам:</h4>
+            </div>
+            <div class="choice-features__wraper">
+              <p class="choice-features__text">
+                Розвивай професійну майстерність та збільши спектр своїх послуг, які зможеш
+                запропонувати своїм клієнтам. у сфері краси та моди, ставши професійним барбером!
+              </p>
+              <div class="choice-features__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <h2 class="title">ТЕБЕ НАВЧАТИМУТЬ</h2>
+  
+        <div class="teachers-gallery__container">
+          <div class="teachers-swiper swiper">
+            <ul class="teachers-gallery swiper-wrapper">
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_1.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">ТОП барбер - Олексій</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Особливо цінує класичні стрижки і виконує різні варіації подовжених
+                          дизайнів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Успішно випустив 2 потоки студентів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Навчає як технічним так і міжособистісним навичкам роботи.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 4 роки досвіду роботи.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_2.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">ТОП барбер - Павло</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 5 років досвіду роботи.</p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Успішно випустив 4 потоки студентів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Володіє глибокими знаннями технік стрижки і поєднує класичні підходи і
+                          сучасні тренди.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Відповідальний і уважний, навчає як технічній частині, так і гарному
+                          сервісу.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_3.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">ТОП барбер - Влад</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 2 роки досвіду роботи.</p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Вдало створює комфортну атмосферу для студентів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Спокійний і відкритий, допомагає учням швидко опановувати навички.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Особливо любить працювати з бородою.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_4.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">Старший барбер - Назар</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 3 роки досвіду роботи.</p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Чудово розуміє і відтворює побажання відвідувача створюючи неймовірно
+                          стильні дизайни.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Завжди відкритий до створення нового та кардинальних змін у стилі.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_1.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">ТОП барбер - Олексій</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Особливо цінує класичні стрижки і виконує різні варіації подовжених
+                          дизайнів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Успішно випустив 2 потоки студентів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Навчає як технічним так і міжособистісним навичкам роботи.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 4 роки досвіду роботи.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_2.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">ТОП барбер - Павло</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 5 років досвіду роботи.</p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Успішно випустив 4 потоки студентів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Володіє глибокими знаннями технік стрижки і поєднує класичні підходи і
+                          сучасні тренди.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Відповідальний і уважний, навчає як технічній частині, так і гарному
+                          сервісу.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_3.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">ТОП барбер - Влад</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 2 роки досвіду роботи.</p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Вдало створює комфортну атмосферу для студентів.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Спокійний і відкритий, допомагає учням швидко опановувати навички.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Особливо любить працювати з бородою.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="teachers-gallery__item swiper-slide">
+                <div class="teachers-gallery__content">
+                  <div class="teachers-gallery__box-img">
+                    <img
+                      class="teachers-gallery__img"
+                      src="./images/teacher_4.webp"
+                      alt="cosmetics"
+                    />
+                  </div>
+                  <div class="teachers-gallery__wraper">
+                    <h4 class="teachers-gallery__title">Старший барбер - Назар</h4>
+                    <ul class="teachers-gallery-list">
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">Має 3 роки досвіду роботи.</p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Чудово розуміє і відтворює побажання відвідувача створюючи неймовірно
+                          стильні дизайни.
+                        </p>
+                      </li>
+                      <li class="teachers-gallery-list__item">
+                        <p class="teachers-gallery-list__text">
+                          Завжди відкритий до створення нового та кардинальних змін у стилі.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="teachers-navigation">
+            <button type="button" class="teachers-navigation-next">
+              <i class="icon-arrow-slider-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="box">
+        <h2 class="title">ПРОГРАМА КУРСУ</h2>
+        <ul class="course-list">
+          <li class="course-list__item">
+            <span class="course-list__title">Тривалість</span>
+            <span class="course-list__text">2 МІСЯЦІ</span>
+          </li>
+          <li class="course-list__item">
+            <span class="course-list__title">Занять</span>
+            <span class="course-list__text">24</span>
+          </li>
+          <li class="course-list__item">
+            <span class="course-list__title">Годин</span>
+            <span class="course-list__text">96+</span>
+          </li>
+          <li class="course-list__item">
+            <span class="course-list__title">Найближчий старт</span>
+            <span class="course-list__text">1 ГРУДНЯ</span>
+          </li>
+        </ul>
+  
+        <ul class="course-programme" id="course-programme">
+          <li class="course-programme__item">
+            <div class="course-programme__module">
+              <div class="course-programme__module-content">
+                <h4 class="course-programme__module-title">модуль 1</h4>
+                <p class="course-programme__module-text">введення в професію</p>
+                <ul class="course-capabilities">
+                  <li class="course-capabilities__item">3 УРОКИ</li>
+                  <li class="course-capabilities__item">12 ГОДИН</li>
+                  <li class="course-capabilities__item">ТЕОРІЯ</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-programme__delimiter"></div>
+            <div class="course-programme__lessons">
+              <h5 class="course-programme__lessons-title">УРОК 1-3</h5>
+              <ul class="course-description">
+                <li class="course-description__item">Ознайомлення з дисципліною барберінгу</li>
+                <li class="course-description__item">Вивчення видів стрижок</li>
+                <li class="course-description__item">Стрижка бороди</li>
+              </ul>
+              <div class="course-programme__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="course-programme__item">
+            <div class="course-programme__module">
+              <div class="course-programme__module-content">
+                <h4 class="course-programme__module-title">модуль 2</h4>
+                <p class="course-programme__module-text">Стрижка машинкою + фейд</p>
+                <ul class="course-capabilities">
+                  <li class="course-capabilities__item">5 УРОКІВ</li>
+                  <li class="course-capabilities__item">20 ГОДИН</li>
+                  <li class="course-capabilities__item">ТЕОРІЯ</li>
+                  <li class="course-capabilities__item">ПРАКТИКА</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-programme__delimiter"></div>
+            <div class="course-programme__lessons">
+              <h5 class="course-programme__lessons-title">УРОК 4-8</h5>
+              <ul class="course-description">
+                <li class="course-description__item">Поглиблене вивчення техніки “fade”</li>
+                <li class="course-description__item">Практика на моделях</li>
+              </ul>
+              <div class="course-programme__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="course-programme__item">
+            <div class="course-programme__module">
+              <div class="course-programme__module-content">
+                <h4 class="course-programme__module-title">модуль 3</h4>
+                <p class="course-programme__module-text">Стрижка ножицями</p>
+                <ul class="course-capabilities">
+                  <li class="course-capabilities__item">3 УРОКи</li>
+                  <li class="course-capabilities__item">12 ГОДИН</li>
+                  <li class="course-capabilities__item">ТЕОРІЯ</li>
+                  <li class="course-capabilities__item">ПРАКТИКА</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-programme__delimiter"></div>
+            <div class="course-programme__lessons">
+              <h5 class="course-programme__lessons-title">УРОК 9-11</h5>
+              <ul class="course-description">
+                <li class="course-description__item">Техніки для середньої довжини</li>
+                <li class="course-description__item">Робота з ножицями та формою волосся</li>
+              </ul>
+              <div class="course-programme__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="course-programme__item">
+            <div class="course-programme__module">
+              <div class="course-programme__module-content">
+                <h4 class="course-programme__module-title">модуль 4</h4>
+                <p class="course-programme__module-text">Подовжені стрижки</p>
+                <ul class="course-capabilities">
+                  <li class="course-capabilities__item">8 УРОКІВ</li>
+                  <li class="course-capabilities__item">32 ГОДИНИ</li>
+                  <li class="course-capabilities__item">ТЕОРІЯ</li>
+                  <li class="course-capabilities__item">ПРАКТИКА</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-programme__delimiter"></div>
+            <div class="course-programme__lessons">
+              <h5 class="course-programme__lessons-title">УРОК 12-19</h5>
+              <ul class="course-description">
+                <li class="course-description__item">Розуміння силуету та балансу</li>
+                <li class="course-description__item">
+                  Робота з індивідуальними пропорціями клієнтів
+                </li>
+              </ul>
+              <div class="course-programme__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="course-programme__item">
+            <div class="course-programme__module">
+              <div class="course-programme__module-content">
+                <h4 class="course-programme__module-title">модуль 5</h4>
+                <p class="course-programme__module-text">Стрижка бороди</p>
+                <ul class="course-capabilities">
+                  <li class="course-capabilities__item">4 УРОКИ</li>
+                  <li class="course-capabilities__item">16 ГОДИН</li>
+                  <li class="course-capabilities__item">ПРАКТИКА</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-programme__delimiter"></div>
+            <div class="course-programme__lessons">
+              <h5 class="course-programme__lessons-title">УРОК 20-23</h5>
+              <ul class="course-description">
+                <li class="course-description__item">Техніка “fade” на бороді</li>
+                <li class="course-description__item">Гоління та камуфлювання сивини</li>
+              </ul>
+              <div class="course-programme__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div>
+            </div>
+          </li>
+          <li class="course-programme__item">
+            <div class="course-programme__module">
+              <div class="course-programme__module-content">
+                <h4 class="course-programme__module-title">Залік</h4>
+                <p class="course-programme__module-text">Практичний іспит</p>
+                <ul class="course-capabilities">
+                  <li class="course-capabilities__item">1 УРОК</li>
+                  <li class="course-capabilities__item">4 ГОДИНИ</li>
+                  <li class="course-capabilities__item">ПРАКТИКА</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-programme__delimiter"></div>
+            <div class="course-programme__lessons">
+              <h5 class="course-programme__lessons-title">УРОК 24</h5>
+              <ul class="course-description">
+                <li class="course-description__item">Практичний іспит</li>
+                <li class="course-description__item">Розбір та оцінювання робіт</li>
+              </ul>
+              <!-- <div class="course-programme__slider box-slider">
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+                <i class="icon-arrow-dropdown"></i>
+              </div> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="box">
+        <div class="diploma__header-block header-block">
+          <h2 class="header-block__title">ДИПЛОМ</h2>
+          <div class="header-block__subtitle">ПІСЛЯ ПРОХОДЖЕННЯ КУРСУ ВИ ОТРИМУЄТЕ ДИПЛОМ</div>
+        </div>
+        <div class="diploma__body">
+          <div class="diploma__row">
+            <div class="diploma__column diploma__column_first">
+              <div class="diplom__item diplom__item_vertical item">
+                <div class="item__image item__image_h">
+                  <img src="./images/diploma_1.webp" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="diploma__column diploma__column_second">
+              <div class="diplom__item diplom__item_vertical item">
+                <div class="item__image item__image_h">
+                  <img src="./images/diploma_2.webp" alt="" />
+                </div>
+              </div>
+            </div>
+  
+            <div class="diploma__column diploma__column_big">
+              <div class="diploma__item diplom__item_horizontal item">
+                <div class="item__image item__image_v item__image_first">
+                  <img src="./images/diploma_3.webp" alt="" />
+                </div>
+                <div class="item__image item__image_v">
+                  <img src="./images/diploma_4.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -490,7 +1044,7 @@
 
       <a href="#" class="footer__logo">
 
-        <img src="./img/Logo1.png" alt="logo" />
+        <img src="./images/Logo_Footer.svg" alt="logo" />
 
       </a>
 
@@ -498,51 +1052,53 @@
 
         <div class="footer__text">Офіційний дистрибʼютор впевненості</div>
 
-        <div class="footer__copiright">
+        <div class="footer__copiright copiright">
 
-          <p><span>©Shop</span>academy</p>
+          <p class="copiright__text"><span>©Shop</span>academy</p>
 
-          <p>2024</p>
+          <p class="copiright__text">2024</p>
 
         </div>
 
       </div>
 
-      <nav class="footer__menu footer-menu">
+<div class="footer__nav">
 
-        <div class="footer-menu__list">
+        <nav class="footer__menu menu">
 
-          <div class="footer-menu__item">
+        <ul class="menu__list">
 
-            <a href="#" class="footer-menu__link">про курс</a>
+          <li class="menu__item">
 
-          </div>
+            <a href="#" class="menu__link">про курс</a>
 
-          <div class="footer-menu__item">
+          </li>
 
-            <a href="#" class="footer-menu__link">про нас</a>
+          <li class="menu__item">
 
-          </div>
+            <a href="#" class="menu__link">про нас</a>
 
-          <div class="footer-menu__item">
+          </li>
 
-            <a href="#" class="footer-menu__link">тренери</a>
+          <li class="menu__item">
 
-          </div>
+            <a href="#" class="menu__link">тренери</a>
 
-          <div class="footer-menu__item">
+          </li>
 
-            <a href="#" class="footer-menu__link">програма курсу</a>
+          <li class="menu__item">
 
-          </div>
+            <a href="#" class="menu__link">програма курсу</a>
 
-          <div class="footer-menu__item">
+          </li>
 
-            <a href="#" class="footer-menu__link">адреса</a>
+          <li class="menu__item">
 
-          </div>
+            <a href="#" class="menu__link">адреса</a>
 
-        </div>
+          </li>
+
+        </ul>
 
       </nav>
 
@@ -566,6 +1122,8 @@
 
       </div>
 
+</div>
+
     </div>
 
   </div>
@@ -575,6 +1133,42 @@
 
 
 
+<div class="bottom-bar">
+          <div class="bottom-bar__container container">
+            <div class="bottom-bar__list">
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-home bottom-bar__icon"></i>
+                  <p>головна</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-services bottom-bar__icon"></i>
+                  <p>послуги</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-works bottom-bar__icon"></i>
+                  <p>Роботи</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-barbers bottom-bar__icon"></i>
+                  <p>Барбери</p></a
+                >
+              </div>
+              <div class="bottom-bar__item">
+                <a href="" class="bottom-bar__link">
+                  <i class="icon-contacts bottom-bar__icon"></i>
+                  <p>Контакти</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 <script src="js/main.min.js"></script>
 </body>
 
