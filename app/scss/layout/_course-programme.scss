@@ -1,0 +1,235 @@
+.course-programme {
+  & {
+    margin-top: 20px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__module {
+    padding-right: 17px;
+  }
+
+  &__module-content {
+    padding-top: 13px;
+  }
+
+  &__module,
+  &__module-text {
+    text-transform: uppercase;
+    text-align: right;
+    color: #067f8e;
+  }
+
+  &__module-title {
+    font-size: 20px;
+  }
+
+  &__module-text {
+    font-size: 12px;
+  }
+
+  &__delimiter {
+    position: relative;
+    width: 2px;
+    background: #067f8e;
+    flex-shrink: 0;
+  }
+
+  &__delimiter::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $light-blue;
+    background-color: $light;
+    border-radius: 100%;
+    transform: translateX(calc(-50% + 1px));
+  }
+
+  &__lessons {
+    position: relative;
+    padding-left: 17px;
+    padding-top: 16px;
+    padding-bottom: 47px;
+    height: 75px;
+    overflow: hidden;
+    transition: $anim;
+  }
+
+  &__lessons,
+  &__module {
+    width: 50%;
+  }
+
+  &__item:last-child &__lessons,
+  &__item:last-child &__module {
+    padding-bottom: 20px;
+  }
+
+  &__lessons-title {
+    font-size: 14px;
+    color: $dark;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 23px;
+    padding: 24px 24px 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    width: 100%;
+    z-index: 10;
+    cursor: pointer;
+    color: $light-blue;
+  }
+
+  &__slider i {
+    pointer-events: none;
+  }
+
+  .slider-active &__slider i {
+    transform: rotate(180deg);
+    color: #067f8e;
+  }
+
+  @media (min-width: $desktop) {
+    &__module-title {
+      font-size: 30px;
+    }
+
+    &__module-text {
+      font-size: 20px;
+    }
+
+    &__lessons-title {
+      font-size: 20px;
+    }
+
+    &__module {
+      padding-right: 30px;
+    }
+
+    &__lessons {
+      padding-left: 30px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      height: 100px;
+    }
+
+    &__item:first-child &__module-content {
+      padding-top: 30px;
+    }
+
+    &__item:first-child &__lessons {
+      padding-top: 36px;
+    }
+
+    &__module-content {
+      padding-top: 54px;
+    }
+
+    &__delimiter::after {
+      top: 65px;
+      width: 20px;
+      height: 20px;
+    }
+
+   &__item:first-child &__delimiter::after {
+      top: 41px;
+    }
+
+    &__slider {
+      padding: 14px 24px 0;
+    }
+
+    .slider-active &__slider {
+      padding: 0 24px 0;
+    }
+
+    &__item:last-child &__lessons,
+    &__item:last-child &__module {
+      padding-bottom: 30px;
+    }
+  }
+}
+.course-capabilities {
+  & {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 2px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #067f8e;
+    border: 1px solid #17c7e6;
+    border-radius: 50px;
+    width: 81px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    & {
+      gap: 10px;
+    }
+
+    &__item {
+      font-size: 18px;
+      width: 130px;
+      height: 40px;
+    }
+  }
+}
+.course-description {
+  & {
+    padding-left: 18px;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 12px;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    & {
+      padding-left: 25px;
+    }
+
+    &__item {
+      font-size: 18px;
+    }
+
+    &__item::before {
+      width: 4px;
+      height: 4px;
+    }
+  }
+}

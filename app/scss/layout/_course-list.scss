@@ -1,4 +1,12 @@
 .course-list {
+  & {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
   &__item {
     text-align: center;
   }
@@ -15,5 +23,17 @@
     font-weight: 700;
     font-size: 20px;
     color: $dark;
+    margin-top: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 50px;
+      line-height: 110%;
+    }
   }
 }
