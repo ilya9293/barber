@@ -3,7 +3,7 @@
   width: 100%;
   position: relative;
   z-index: 5;
-  background-image: url("../../images/Banner_1.jpg");
+  background-image: url("../images/Banner_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -75,7 +75,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url("../../images/Banner_2.jpg");
+    background-image: url("../images/Banner_2.jpg");
     &__body {
       max-width: 100%;
       padding: 64px 0px 70px 0px;
