@@ -73,7 +73,12 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["node_modules/swiper/swiper-bundle.js", "app/js/*.js", "!app/js/main.min.js"])
+  return src([
+    "node_modules/swiper/swiper-bundle.js",
+    "node_modules/accordion-js/dist/accordion.min.js",
+    "app/js/*.js",
+    "!app/js/main.min.js",
+  ])
     .pipe(sourcemaps.init())
     .pipe(concat("main.min.js"))
     .pipe(uglify())
@@ -117,7 +122,7 @@ function building() {
       "!app/images/**/*.html",
       "app/images/*.*",
       "!app/images/*.svg",
-       'app/icons/sprite.svg',
+      "app/icons/sprite.svg",
       "app/fonts/*.*",
       "app/iconFont/*.*",
       "app/js/main.min.js",

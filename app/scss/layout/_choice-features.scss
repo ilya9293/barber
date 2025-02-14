@@ -41,12 +41,26 @@
     gap: 10px;
     font-size: 23px;
     padding: 14px 5px 5px;
-    background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
-      linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
-      linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
+    //  background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+    //    linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+    //    linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
     width: 100%;
     z-index: 10;
     cursor: pointer;
+  }
+
+  & &__item:nth-child(odd) &__slider {
+    background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+      linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+      linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
+  }
+  & &__item:nth-child(even) &__slider {
+    background: linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
+      linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%),
+      linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
+      linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%),
+      linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
+      linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%);
   }
 
   &__slider i {
@@ -65,30 +79,24 @@
       grid-column: span 2;
     }
 
-    &__item:not(:first-child):nth-child(odd) &__slider {
-      background: linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%),
-        linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%),
-        linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%);
+    //  &__item:not(:first-child):nth-child(odd) &__slider {
+    //    background: linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%),
+    //      linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%),
+    //      linear-gradient(180deg, rgba(16, 167, 191, 0) 0%, #10a7bf 100%);
+    //  }
+  }
+
+  @media (max-width: $small) {
+   .choice & &__item &__slider {
+      background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+        linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
+        linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
     }
   }
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
-    & &__item:nth-child(odd) &__slider {
-      background: linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
-        linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%),
-        linear-gradient(180deg, rgba(12, 131, 150, 0) 0%, #0c8396 100%);
-    }
-    & &__item:nth-child(even) &__slider {
-      background: linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
-        linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%),
-        linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
-        linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%),
-        linear-gradient(180deg, rgba(6, 107, 120, 0) 0%, #066b78 100%),
-        linear-gradient(90deg, rgba(12, 130, 149, 0.2) 0%, rgba(6, 107, 120, 0.2) 100%);
-    }
   }
 
   @media (min-width: $desktop) {

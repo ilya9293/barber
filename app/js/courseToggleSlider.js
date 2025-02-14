@@ -1,11 +1,17 @@
 const courseProgramme = document.querySelector("#course-programme");
 
-[...courseProgramme.children].forEach((item) => {
-   const heightModule = item.firstElementChild.scrollHeight;   
-   // if (heightModule > item.lastElementChild.scrollHeight) {
-   //   item.lastElementChild.lastElementChild.classList.add("hide");
-   // }
-  item.lastElementChild.style.height = heightModule + "px";
+document.addEventListener("DOMContentLoaded", () => {
+  [...courseProgramme.children].forEach((item) => {
+    const heightModule = item.firstElementChild.scrollHeight;
+    const lastChild = item.lastElementChild;
+    const computedStyle = window.getComputedStyle(lastChild);
+    const paddingBottom = parseFloat(computedStyle.paddingBottom) || 0;
+
+    if (heightModule > lastChild.scrollHeight - paddingBottom) {
+      lastChild.lastElementChild.classList.add("hide");
+    }
+    lastChild.style.height = heightModule + "px";
+  });
 });
 
 courseProgramme.addEventListener("click", (e) => {

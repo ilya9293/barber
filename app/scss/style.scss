@@ -1,5 +1,6 @@
 @import "../../node_modules/modern-normalize/modern-normalize";
 @import "../../node_modules/swiper/swiper-bundle";
+@import "../../node_modules/accordion-js/dist/accordion.min";
 
 @import "./utils/fonts";
 @import "./utils/variables";
@@ -33,3 +34,4 @@
 @import "./layout/course-list";
 @import "./layout/course-programme";
 @import "./layout/feedback-gallery";
+@import "./layout/questions";
