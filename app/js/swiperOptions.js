@@ -49,12 +49,30 @@ const swiperTeachers = new Swiper(".teachers-swiper", {
   grabCursor: true,
   slidesPerView: "auto",
   loop: true,
-    autoplay: {
-      delay: 6000,
-    },
+  autoplay: {
+    delay: 6000,
+  },
 
   navigation: {
     nextEl: ".teachers-navigation-next",
+  },
+
+  breakpoints: {
+    1235: {
+      spaceBetween: 50,
+    },
+  },
+});
+
+const swiperFeedbacks = new Swiper(".feedback-swiper", {
+  speed: 400,
+  spaceBetween: 20,
+  grabCursor: true,
+  slidesPerView: "auto",
+  loop: true,
+
+  navigation: {
+    nextEl: ".feedback-navigation-next",
   },
 
   breakpoints: {

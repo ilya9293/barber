@@ -149,11 +149,12 @@
   & {
     position: absolute;
     top: 110px;
-    right: -20px;
+    right: 0;
     z-index: 20;
   }
 
   &-next {
+    width: 35px;
     font-size: 50px;
     cursor: pointer;
     border: none;
@@ -164,11 +165,12 @@
   }
 
   @media (min-width: $desktop) {
-   & {
+    & {
       top: 184px;
     }
 
     &-next {
+      width: 70px;
       font-size: 100px;
     }
   }

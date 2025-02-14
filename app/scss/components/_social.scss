@@ -21,7 +21,7 @@
 
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $tablet) {
     .social {
     justify-content: end;
    &__body {
