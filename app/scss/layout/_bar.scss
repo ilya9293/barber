@@ -51,7 +51,7 @@
   }
 
   &__icon {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0px;
     color: $light;
   }
@@ -68,5 +68,9 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease 0s;
+  }
+
+  &__link svg {
+    height: 20px;
   }
 }

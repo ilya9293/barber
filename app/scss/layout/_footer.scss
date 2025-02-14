@@ -4,7 +4,7 @@
 
   &__body {
     height: 75px;
-    margin-bottom: 77px;
+    margin-bottom: 67px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -63,7 +63,7 @@
 
 
 
-@media  screen and (min-width: 992px) {
+@media  screen and (min-width: $tablet) {
   .footer {
     &__body {
       margin: 0;
