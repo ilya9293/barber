@@ -131,6 +131,17 @@
     font-size: 16px;
   }
 
+  @media (max-width: $desktop) {
+    &--adress {
+      margin-top: 24px;
+    }
+  }
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    &--adress {
+      width: 35%;
+    }
+  }
+
   @media (min-width: $desktop) {
     & {
       width: 387px;
