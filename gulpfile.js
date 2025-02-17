@@ -76,6 +76,8 @@ function scripts() {
   return src([
     "node_modules/swiper/swiper-bundle.js",
     "node_modules/accordion-js/dist/accordion.min.js",
+    "node_modules/progressbar.js/dist/progressbar.js",
+    "node_modules/countup.js/dist/countUp.umd.js",
     "app/js/*.js",
     "!app/js/main.min.js",
   ])
@@ -121,7 +123,7 @@ function building() {
       "app/css/style.min.css",
       "!app/images/**/*.html",
       "app/images/*.*",
-      "!app/images/*.svg",
+      // "!app/images/*.svg",
       "app/icons/sprite.svg",
       "app/fonts/*.*",
       "app/iconFont/*.*",

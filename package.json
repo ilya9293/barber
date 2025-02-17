@@ -11,6 +11,7 @@
   "devDependencies": {
     "accordion-js": "^3.4.0",
     "browser-sync": "^2.28.1",
+    "countup.js": "^2.8.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",
@@ -26,6 +27,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "progressbar.js": "^1.1.1",
     "sass": "^1.58.3",
     "swiper": "^11.2.2"
   },
