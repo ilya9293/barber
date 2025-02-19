@@ -20,57 +20,38 @@
     & p {
       font-size: 10px;
     }
-    &::after {
-      display: none;
-      position: absolute;
-      content: "";
-      top: 0;
-      left: -60%;
-      height: 3px;
-      width: 240%;
-      background-color: $light-blue;
-    }
-    &:hover::after,
-    &:active::after {
-      display: block;
-    }
-
-    &:hover,
-    &:active {
-      &__icon {
-        color: $light-blue;
-      }
-    }
-
-    &:hover .bottom-bar__link,
-    &:active .bottom-bar__link,
-    &:hover .bottom-bar__icon,
-    &:active .bottom-bar__icon {
-      color: $light-blue;
-    }
   }
 
   &__icon {
     font-size: 20px;
     margin: 10px 0px;
-    color: $light;
+    color: inherit;
   }
 
   &__link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 16px;
-    font-family: "Source Sans Pro", sans-serif;
+    padding-bottom: 13px;
     font-weight: 600;
     font-size: 10px;
     color: $light;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.3s ease 0s;
+    transition: $anim;
+    width: 100%;
   }
 
   &__link svg {
     height: 20px;
+  }
+
+  &__link.active {
+    border-top: 3px solid $light-blue;
+    color: $light-blue;
+  }
+
+  &__link.active svg path {
+    stroke: $light-blue;
   }
 }

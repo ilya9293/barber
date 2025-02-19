@@ -29,6 +29,7 @@
     "gulp-webp": "^4.0.1",
     "progressbar.js": "^1.1.1",
     "sass": "^1.58.3",
+    "scroll-to-element": "^2.0.3",
     "swiper": "^11.2.2"
   },
   "dependencies": {

@@ -78,6 +78,7 @@ function scripts() {
     "node_modules/accordion-js/dist/accordion.min.js",
     "node_modules/progressbar.js/dist/progressbar.js",
     "node_modules/countup.js/dist/countUp.umd.js",
+    "node_modules/scroll-to-element/build/scrollToElement.js",
     "app/js/*.js",
     "!app/js/main.min.js",
   ])

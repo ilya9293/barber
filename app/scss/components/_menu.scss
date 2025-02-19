@@ -8,7 +8,7 @@
     height: 100%;
   }
   &__item {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     display: block;
     padding: 0px;
     height: 21px;
@@ -43,10 +43,32 @@
   }
 
   @media (min-width: $desktop) {
-   &__list {
+    &__list {
       flex-direction: row;
       align-items: center;
       gap: 54px;
-   }
+    }
+
+    &__item,
+    &__link {
+      height: 100%;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.header__menu {
+  .menu__item {
+    height: 100%;
+  }
+
+  .menu__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
