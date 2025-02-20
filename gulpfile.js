@@ -79,6 +79,9 @@ function scripts() {
     "node_modules/progressbar.js/dist/progressbar.js",
     "node_modules/countup.js/dist/countUp.umd.js",
     "node_modules/scroll-to-element/build/scrollToElement.js",
+    "node_modules/axios/dist/axios.js",
+    "node_modules/notyf/notyf.umd.js",
+    "node_modules/just-validate/dist/just-validate.production.min.js",
     "app/js/*.js",
     "!app/js/main.min.js",
   ])

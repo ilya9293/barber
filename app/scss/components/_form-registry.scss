@@ -56,6 +56,14 @@
     color: #a6a6a6;
   }
 
+  &__input.error-input {
+    border: 1px solid #ff0000;
+  }
+
+  & .error-label {
+    font-size: 14px;
+  }
+
   &__submit {
     position: relative;
     width: 100%;
@@ -163,6 +171,10 @@
 
     &__input--phone {
       padding-left: 130px;
+    }
+
+    & .error-label {
+      font-size: 16px;
     }
 
     &__icon-flag {
