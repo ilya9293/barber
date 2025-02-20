@@ -1,6 +1,6 @@
 const successMsg = "Контакти успішно відправлені";
 const errorMsg = "Упс! Щось пішло не так. Спробуйте пізніше";
-const URL_TG = `https://eozn3r1wxavwgbg.m.pipedream.net`;
+const URL_TG = "https://falling-pond-c77e.ilya9293.workers.dev";
 const headersTG = {
   headers: {
     "Content-Type": "application/json",
@@ -76,7 +76,7 @@ const formRegistryAdress = document.querySelector(formAdress);
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const { name, email, phone } = e.target.elements;
-    const validator = form.classList.contains(formCourse)
+    const validator = form.classList.contains("form-registry--course")
       ? courseValidator
       : addressValidator;
 
