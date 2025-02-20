@@ -30,6 +30,7 @@
 
   &__content {
     height: 100%;
+    cursor: pointer;
   }
 
   @media (min-width: $desktop) {

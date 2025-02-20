@@ -17,7 +17,7 @@
     color: #a6a6a6;
   }
 
-  &__num {
+  &__num, &__sign {
     font-weight: 700;
     font-size: 30px;
     line-height: 83%;
@@ -70,7 +70,7 @@
       font-size: 30px;
     }
 
-    &__num {
+    &__num, &__sign {
       font-size: 50px;
       line-height: 90%;
     }

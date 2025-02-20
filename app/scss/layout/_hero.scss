@@ -4,7 +4,7 @@
   position: relative;
   z-index: 5;
 
-  background-image: url("../images/Banner_1.jpg");
+  background-image: url("../images/Banner_1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -46,42 +46,55 @@
     -webkit-text-stroke-color: $dark;
   }
   &__button {
+    position: relative;
     display: inline-block;
     padding: 15px 21px;
     font-size: 14px;
     border-radius: 50px;
-    background: linear-gradient(
-      90deg,
-      rgba(6, 127, 142, 1) 0%,
-      rgba(23, 199, 230, 1) 100%
-    );
+    background: linear-gradient(90deg, rgba(6, 127, 142, 1) 0%, rgba(23, 199, 230, 1) 100%);
     color: $light;
     font-style: normal;
     font-weight: 400;
     // line-height: 126%;
     text-decoration: none;
     text-transform: uppercase;
-    transition: background 0.3s ease 0s;
-    &:hover,
-    &:active {
-      background: linear-gradient(
-        90deg,
-        rgba(4, 92, 103, 1) 0%,
-        rgba(9, 182, 205, 1) 100%
-      );
+  }
+
+  &__button span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(4, 92, 103, 1) 0%, rgba(9, 182, 205, 1) 100%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: $anim;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    &::before {
+      opacity: 1;
     }
   }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .hero {
-   
-    background-image: url("../images/Banner_2.jpg");
+    background-image: url("../images/Banner_2.webp");
     &__body {
       max-width: 100%;
       padding: 64px 0px 70px 0px;
     }
+
+    &::after {
+      opacity: 0.3;
+    }
+
     &__title {
       max-width: 380px;
       font-size: 44px;

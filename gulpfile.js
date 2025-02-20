@@ -73,7 +73,18 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["node_modules/swiper/swiper-bundle.js", "app/js/*.js", "!app/js/main.min.js"])
+  return src([
+    "node_modules/swiper/swiper-bundle.js",
+    "node_modules/accordion-js/dist/accordion.min.js",
+    "node_modules/progressbar.js/dist/progressbar.js",
+    "node_modules/countup.js/dist/countUp.umd.js",
+    "node_modules/scroll-to-element/build/scrollToElement.js",
+    "node_modules/axios/dist/axios.js",
+    "node_modules/notyf/notyf.umd.js",
+    "node_modules/just-validate/dist/just-validate.production.min.js",
+    "app/js/*.js",
+    "!app/js/main.min.js",
+  ])
     .pipe(sourcemaps.init())
     .pipe(concat("main.min.js"))
     .pipe(uglify())
@@ -116,8 +127,8 @@ function building() {
       "app/css/style.min.css",
       "!app/images/**/*.html",
       "app/images/*.*",
-      "!app/images/*.svg",
-       'app/icons/sprite.svg',
+      // "!app/images/*.svg",
+      "app/icons/sprite.svg",
       "app/fonts/*.*",
       "app/iconFont/*.*",
       "app/js/main.min.js",

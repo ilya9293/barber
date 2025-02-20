@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- <link rel="icon" href="../images/Logo_Footer.svg" type="image/svg+xml"> -->
     <link rel="stylesheet" href="css/style.min.css" />
+    <title>SHOP ACADEMY</title>
   </head>
 
   <body>
 
-<header class="header">
+<header class="header" id="header">
   <div class="header__container container">
     <div class="header__body">
       <a href="#" class="header__logo">
@@ -20,20 +21,20 @@
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link">про курс</a>
+              <a href="#about-course" class="menu__link">про курс</a>
             </li>
 
             <li class="menu__item">
-              <a href="#" class="menu__link">про нас</a>
+              <a href="#about-us" class="menu__link">про нас</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">тренери</a>
+              <a href="#teachers" class="menu__link">тренери</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">програма курсу</a>
+              <a href="#programme" class="menu__link">програма курсу</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">адреса</a>
+              <a href="#adress" class="menu__link">адреса</a>
             </li>
           </ul>
         </nav>
@@ -65,12 +66,12 @@
                   підхід через спостереження за особистим і професійним прогресом
                   студентів завдяки нашій академії
                 </div>
-                <a href="#" class="hero__button button">Записатись на курс</a>
+                <a href="#registry" class="hero__button button"><span>Записатись на курс</span></a>
               </div>
             </div>
            
           </div>
-  <section class="section">
+  <section class="section" id="about-course">
     <div class="container">
       <div class="box">
         <h2 class="title title--course">КУРС БАРБЕРА В БІЛІЙ ЦЕРКВІ</h2>
@@ -78,17 +79,18 @@
           <li class="course-info__item">
             <span class="course-info__type">Тривалість</span>
             <div class="course-info__wraper">
-              <span class="course-info__num">2 </span><span class="course-info__text">МІСЯЦІ</span>
+              <span class="course-info__num">2</span><span class="course-info__text"> МІСЯЦІ</span>
             </div>
           </li>
           <li class="course-info__item">
-            <span class="course-info__type">Годин</span><span class="course-info__num">96+</span>
+            <span class="course-info__type">Годин</span><span class="course-info__num">96</span
+            ><span class="course-info__sign">+</span>
           </li>
           <li class="course-info__item">
             <span class="course-info__type">Тип занять</span>
             <div class="course-info__wraper">
-              <span class="course-info__num">80% </span
-              ><span class="course-info__text">ПРАКТИКИ</span>
+              <span class="course-info__num">80</span><span class="course-info__sign">%</span
+              ><span class="course-info__text"> ПРАКТИКИ</span>
             </div>
           </li>
           <li class="course-info__item">
@@ -104,14 +106,21 @@
           <li class="course-date__item">
             <i class="icon-scissors"></i>
             <p class="course-date__text">Найближча дата старту:</p>
-            <div class="course-date__info">
-              <span class="course-date__num">1</span><span class="course-date__month">грудня</span>
+            <div class="course-date__info" id="course-date-num">
+              <div class="course-date__wraper-num">
+                <span class="course-date__num">1</span><span class="course-date__month">грудня</span>
+              </div>
             </div>
           </li>
           <li class="course-date__item">
             <i class="icon-scissors"></i>
             <p class="course-date__text">Лишилось місць:</p>
-            <div class="course-date__info"><span class="course-date__stat">11/12</span></div>
+            <div class="course-date__info" id="course-date-stat">
+              <div class="course-date__wraper-num">
+                <span class="course-date__stat">11</span
+                ><span class="course-date__stat-max">/12</span>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -155,7 +164,7 @@
         </ul>
       </div>
   
-      <div class="box">
+      <div class="box" id="registry">
         <h2 class="title">РЕЄСТРАЦІЯ НА КУРС</h2>
         <div class="price__container">
           <div class="price__box">
@@ -229,6 +238,7 @@
                 placeholder="Ім’я Прізвище"
                 name="name"
               />
+              <!-- <span class="form-registry__error">Помилка</span> -->
             </label>
             <label class="form-registry__label">
               <span class="form-registry__name">Твій емейл</span>
@@ -274,7 +284,7 @@
     </div>
   </section>
   
-  <section class="section choice">
+  <section class="section choice" id="about-us">
     <div class="box">
       <h2 class="title-light">ЧОМУ ОБИРАЮТЬ НАС</h2>
   
@@ -283,66 +293,66 @@
           <ul class="choice-gallery swiper-wrapper">
             <li class="choice-gallery__item swiper-slide">
               <div class="choice-gallery__content">
-                <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+                <h4 class="choice-gallery__title">Безлімітна косметика</h4>
                 <div class="choice-gallery__box-img">
                   <img
                     class="choice-gallery__img"
-                    src="../images/choise-gallery.webp"
+                    src="../images/slider-cosmetics.webp"
                     alt="cosmetics"
                   />
                 </div>
                 <p class="choice-gallery__text">
-                  На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
-                  шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
-                  іншого.
+                  У тебе буде доступ до найкращих косметичних засобів: шампуні, кондиціонери,
+                  стайлінги та інші необхідні продукти для роботи.
                 </p>
               </div>
             </li>
             <li class="choice-gallery__item swiper-slide">
               <div class="choice-gallery__content">
-                <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+                <h4 class="choice-gallery__title">Ідеальні інструменти</h4>
                 <div class="choice-gallery__box-img">
                   <img
                     class="choice-gallery__img"
-                    src="../images/choise-gallery.webp"
-                    alt="cosmetics"
+                    src="../images/slider-instruments.webp"
+                    alt="instruments"
                   />
                 </div>
                 <p class="choice-gallery__text">
-                  На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
-                  шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
-                  іншого.
+                  Професійні інструменти для стрижок і догляду за волоссям, що забезпечують комфорт і
+                  високу якість роботи.
                 </p>
               </div>
             </li>
             <li class="choice-gallery__item swiper-slide">
               <div class="choice-gallery__content">
-                <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+                <h4 class="choice-gallery__title">Моделі для практики</h4>
                 <div class="choice-gallery__box-img">
                   <img
                     class="choice-gallery__img"
-                    src="../images/choise-gallery.webp"
-                    alt="cosmetics"
+                    src="../images/slider-manequins.webp"
+                    alt="manequins"
                   />
                 </div>
                 <p class="choice-gallery__text">
-                  На навчанні ти можеш безлімітно використовувати косметику різноманітних брендів:
-                  шампуні, кондиціонери, стайлінги, камуфляжі, пасти, тоніки, пудри, пасти та безліч
-                  іншого.
+                  Ти не тільки навчишся стригти на манекенах, але й отримаєш реальний досвід роботи з
+                  клієнтами.
                 </p>
               </div>
             </li>
             <li class="choice-gallery__item swiper-slide">
               <div class="choice-gallery__content">
-                <h4 class="choice-gallery__title">повний безліміт косметики</h4>
+                <h4 class="choice-gallery__title">Міжнародний сертифікат</h4>
                 <div class="choice-gallery__box-img">
                   <img
                     class="choice-gallery__img"
-                    src="../images/choise-gallery.webp"
-                    alt="cosmetics"
+                    src="../images/slider-accreditation.webp"
+                    alt="accreditation"
                   />
                 </div>
-                <p class="choice-gallery__text">На навчанні ти можеш безлімітно</p>
+                <p class="choice-gallery__text">
+                  Після закінчення ти отримуєш диплом академії та міжнародний сертифікат КССК, який
+                  дає можливість працювати у Європі, Азії та Америці.
+                </p>
               </div>
             </li>
           </ul>
@@ -360,18 +370,15 @@
     </div>
     <div class="container">
       <div class="box">
-        <h2 class="title-light">ЩО ОТРИМАЄШ НА КУРСІ</h2>
+        <h2 class="title-light">ЩО ТИ ОТРИМАЄШ ПІСЛЯ КУРСУ</h2>
         <ul class="choice-features" id="course-features">
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">ВИВЧИШ БАЗУ ТА СКЛАДНІ ТЕХНІКИ</h4>
+              <h4 class="choice-features__title">Основи та складні техніки стрижки</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Після проходження курсу ти отримаєш чітке розуміння і опануєш базові техніки стрижки
-                які необхідні для роботи сучасному майстру,навчишся підбирати стрижку відповідно до
-                кісткової будови,пропорцій обличчя та структури волосся,що надасть міцний фундамент
-                для професійної кар'єри
+                Ти освоїш основні та найновіші методи стрижки, включаючи fade, ножиці та машинку.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -382,12 +389,12 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">СФОРМУЄШ ПОРТФОЛІО</h4>
+              <h4 class="choice-features__title">Реальний досвід</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Отримаєш потужне професійне портфоліо. Після курсу в тебе будуть фото крутих робіт,
-                які покажуть твій професіоналізм.
+                Ти працюватимеш з реальними моделями, що допоможе отримати досвід і впевненість у
+                своїх силах.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -398,12 +405,12 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">ОТРИМАЄШ ДОСВІД</h4>
+              <h4 class="choice-features__title">Справжнє портфоліо</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Отримаєш досвід роботи з реальними клієнтами. Ми забезпечуємо моделями для
-                відпрацювання навичок. Кожна модель - твій потенційний клієнт
+                Зробиш серію крутих робіт, які стануть твоїм найкращим показником для потенційних
+                роботодавців.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -414,29 +421,12 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">ДИПЛОМ АКАДЕМІЇ ТА СЕРТИФІКАТ КССК</h4>
+              <h4 class="choice-features__title">Працевлаштування</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Отримаєш диплом академії, Сертифікат КССК (Комітет стандартів Салонів Краси),
-                міжнародний сертифікат - який дає можливість працювати в країнах Європи, Азії,
-                Америки.
-              </p>
-              <div class="choice-features__slider box-slider">
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-              </div>
-            </div>
-          </li>
-          <li class="choice-features__item">
-            <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">ПРАЦЕВЛАШТУВАННЯ</h4>
-            </div>
-            <div class="choice-features__wraper">
-              <p class="choice-features__text">
-                Ще до випуску студенти отримують пропозиції співпраці від салонів краси та
-                барбершопів: Beauty Rehab, Backstage, Yeezy, 365 Salon.
+                Ще до випуску ти отримаєш пропозиції співпраці від найкращих салонів та барбершопів,
+                таких як Beauty Rehab, Backstage, Yeezy, 365 Salon.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -453,13 +443,12 @@
           <li class="choice-features__item"></li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">тим, хто немає досвіду у сфері барберінгу:</h4>
+              <h4 class="choice-features__title">Для початківців:</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Якщо ти тільки починають свій шлях у перукарському мистецтві і не маєш попереднього
-                досвіду. Курс надасть необхідні базові знання та навички, щоб успішно почати кар'єру в
-                цій галузі.
+                Якщо ти тільки починаєш свій шлях у перукарстві та хочеш навчатися з нуля, наш курс
+                надасть тобі всі необхідні знання та навички для успішного старту.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -470,12 +459,12 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">Тим, хто прагне змінити кар’єру:</h4>
+              <h4 class="choice-features__title">Для тих, хто хоче змінити кар’єру:</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Працюєш в іншій галузі, але хочеш змінити професію на щось більш творче та цікаве?
-                Отримай нові навички та почни новий етап у своєму житті, ставши професійним барбером.
+                Якщо ти прагнеш перейти в іншу сферу і хочеш отримати нові навички у барберінгу, ми
+                допоможемо зробити це швидко та ефективно.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -486,12 +475,12 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">Випускникам шкіл та коледжів:</h4>
+              <h4 class="choice-features__title">Для випускників:</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Щойно закінчилось навчання і шукаєш цікаву та перспективну професію з високим попитом?
-                Почни кар'єру у сфері краси та моди, ставши професійним барбером!
+                Якщо ти щойно закінчив навчання і шукаєш кар’єру з великим потенціалом, наш курс
+                допоможе зробити перший крок у світі моди та краси.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -502,12 +491,12 @@
           </li>
           <li class="choice-features__item">
             <div class="choice-features__wraper-title">
-              <h4 class="choice-features__title">Перукарям універсалам:</h4>
+              <h4 class="choice-features__title">Для перукарів універсалів:</h4>
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Розвивай професійну майстерність та збільши спектр своїх послуг, які зможеш
-                запропонувати своїм клієнтам. у сфері краси та моди, ставши професійним барбером!
+                Якщо ти вже працюєш у сфері перукарства і хочеш розширити свої навички, наш курс
+                допоможе тобі стати висококласним барбером.
               </p>
               <div class="choice-features__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
@@ -521,7 +510,7 @@
     </div>
   </section>
   
-  <section class="section">
+  <section class="section" id="teachers">
     <div class="container">
       <div class="box">
         <h2 class="title">ТЕБЕ НАВЧАТИМУТЬ</h2>
@@ -809,7 +798,7 @@
         </div>
       </div>
   
-      <div class="box">
+      <div class="box" id="programme">
         <h2 class="title">ПРОГРАМА КУРСУ</h2>
         <ul class="course-list">
           <li class="course-list__item">
@@ -986,11 +975,11 @@
                 <li class="course-description__item">Практичний іспит</li>
                 <li class="course-description__item">Розбір та оцінювання робіт</li>
               </ul>
-              <!-- <div class="course-programme__slider box-slider">
+              <div class="course-programme__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
-              </div> -->
+              </div>
             </div>
           </li>
         </ul>
@@ -1040,7 +1029,7 @@
           <div class="feedback-swiper swiper">
             <ul class="feedback-gallery swiper-wrapper">
               <li class="feedback-gallery__item swiper-slide">
-                <div class="feedback-gallery__content" data-video-id="w640k6pX8_g">
+                <div class="feedback-gallery__content" data-video-id="gfeQqCD0CUw">
                   <div id="video-1"></div>
                   <!-- <iframe
                      width="167"
@@ -1055,27 +1044,27 @@
                 </div>
               </li>
               <li class="feedback-gallery__item swiper-slide">
-                <div class="feedback-gallery__content" data-video-id="gZxnra8xJCo">
+                <div class="feedback-gallery__content" data-video-id="gfeQqCD0CUw">
                   <div id="video-2"></div>
                 </div>
               </li>
               <li class="feedback-gallery__item swiper-slide">
-                <div class="feedback-gallery__content" data-video-id="geDcWM5hNsU">
+                <div class="feedback-gallery__content" data-video-id="gfeQqCD0CUw">
                   <div id="video-3"></div>
                 </div>
               </li>
               <li class="feedback-gallery__item swiper-slide">
-                <div class="feedback-gallery__content" data-video-id="ErJihiQqWcE">
+                <div class="feedback-gallery__content" data-video-id="gfeQqCD0CUw">
                   <div id="video-4"></div>
                 </div>
               </li>
               <li class="feedback-gallery__item swiper-slide">
-                <div class="feedback-gallery__content" data-video-id="w640k6pX8_g">
+                <div class="feedback-gallery__content" data-video-id="gfeQqCD0CUw">
                   <div id="video-5"></div>
                 </div>
               </li>
               <li class="feedback-gallery__item swiper-slide">
-                <div class="feedback-gallery__content" data-video-id="geDcWM5hNsU">
+                <div class="feedback-gallery__content" data-video-id="gfeQqCD0CUw">
                   <div id="video-6"></div>
                 </div>
               </li>
@@ -1087,6 +1076,158 @@
             </button>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section questions">
+    <div class="container">
+      <h2 class="title-light">ПОШИРЕНІ ЗАПИТАННЯ</h2>
+  
+      <ul class="questions-list">
+        <li class="questions-list__item ac">
+          <div class="questions-list__wraper">
+            <h2 class="questions-list__header">
+              <button type="button" class="questions-list__triger">
+                <span class="questions-list__triger-text">ДЕ ЗНАХОДИТЬСЯ АКАДЕМІЯ?</span>
+                <i class="icon-arrow-FAQ-expand"></i>
+              </button>
+            </h2>
+            <div class="questions-list__panel ac-panel">
+              <p class="questions-list__text">
+                Наша академія розташована за адресою: м. Біла Церква, бульвар Олександрійський, 50.
+                <a href="https://g.co/kgs/iDT2tNH" target="_blank" rel="noopener noreferrer"
+                  >(Олександрійський б-р 104)</a
+                >
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="questions-list__item ac">
+          <div class="questions-list__wraper">
+            <h2 class="questions-list__header">
+              <button type="button" class="questions-list__triger">
+                <span class="questions-list__triger-text">ЯКИЙ ГРАФІК НАВЧАННЯ?</span>
+                <i class="icon-arrow-FAQ-expand"></i>
+              </button>
+            </h2>
+            <div class="questions-list__panel ac-panel">
+              <p class="questions-list__text">
+                Заняття проходять 3 рази на тиждень, що дозволяє ефективно поєднувати навчання з
+                іншими справами.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="questions-list__item ac">
+          <div class="questions-list__wraper">
+            <h2 class="questions-list__header">
+              <button type="button" class="questions-list__triger">
+                <span class="questions-list__triger-text">Чи можна стати майстром універсалом? </span>
+                <i class="icon-arrow-FAQ-expand"></i>
+              </button>
+            </h2>
+            <div class="questions-list__panel ac-panel">
+              <p class="questions-list__text">
+                Наш курс навчить тебе всім необхідним технікам, щоб стати висококласним майстром, який
+                працює в будь-якому стилі та напрямку.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="questions-list__item ac">
+          <div class="questions-list__wraper">
+            <h2 class="questions-list__header">
+              <button type="button" class="questions-list__triger">
+                <span class="questions-list__triger-text">Яка вартість курсу?</span>
+                <i class="icon-arrow-FAQ-expand"></i>
+              </button>
+            </h2>
+            <div class="questions-list__panel ac-panel">
+              <p class="questions-list__text">
+                Вартість курсу становить 26 000 грн. Також є можливість оплатити частинами без
+                додаткових комісій.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="questions-list__item ac">
+          <div class="questions-list__wraper">
+            <h2 class="questions-list__header">
+              <button type="button" class="questions-list__triger">
+                <span class="questions-list__triger-text">Чи надаються інструменти? </span>
+                <i class="icon-arrow-FAQ-expand"></i>
+              </button>
+            </h2>
+            <div class="questions-list__panel ac-panel">
+              <p class="questions-list__text">
+                Так, ми забезпечуємо інструментами для навчання та практики, щоб ти міг працювати на
+                найвищому рівні.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section" id="adress">
+    <div class="container">
+      <h2 class="title">адреса академії</h2>
+      <div class="adress__wraper">
+        <div class="adress__wraper-contacts">
+          <p class="adress__subtitle">Перша академія барберінгу в Білій Церкві!</p>
+          <p class="adress__contacts">
+            <span class="adress__text">Ми знаходимось за адресою: </span>
+            <a
+              class="adress__location"
+              href="https://maps.app.goo.gl/fd4abBazwpTWpFC68"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              м. Біла Церква, бульвар Олександрійський, 50</a
+            >
+          </p>
+          <a
+            class="adress__link-map"
+            href="https://maps.app.goo.gl/fd4abBazwpTWpFC68"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img class="adress__map" src="../images/adress.webp" alt="adress" />
+          </a>
+        </div>
+  
+        <form class="form-registry form-registry--adress">
+           <label class="form-registry__label">
+             <span class="form-registry__name">Твоє імʼя</span>
+             <input
+               class="form-registry__input"
+               type="text"
+               placeholder="Ім’я Прізвище"
+               name="name"
+             />
+           </label>
+           <label class="form-registry__label">
+             <span class="form-registry__name">Твій емейл</span>
+             <input class="form-registry__input" type="email" placeholder="Емейл" name="email" />
+           </label>
+           <label class="form-registry__label">
+             <span class="form-registry__name">Твій номер</span>
+             <input
+               class="form-registry__input form-registry__input--phone"
+               type="tel"
+               placeholder="096 123 45 67"
+               name="phone"
+             />
+             <div class="form-registry__wraper-flag">
+               <svg class="form-registry__icon-flag">
+                 <use href="../icons/sprite.svg#flag"></use>
+               </svg>
+               <span class="form-registry__phone-code">+38</span>
+             </div>
+           </label>
+           <button class="form-registry__submit" type="submit"><span>Записатись</span></button>
+         </form>
       </div>
     </div>
   </section>
@@ -1127,31 +1268,31 @@
 
           <li class="menu__item">
 
-            <a href="#" class="menu__link">про курс</a>
+            <a href="#about-course" class="menu__link">про курс</a>
 
           </li>
 
           <li class="menu__item">
 
-            <a href="#" class="menu__link">про нас</a>
+            <a href="#about-us" class="menu__link">про нас</a>
 
           </li>
 
           <li class="menu__item">
 
-            <a href="#" class="menu__link">тренери</a>
+            <a href="#teachers" class="menu__link">тренери</a>
 
           </li>
 
           <li class="menu__item">
 
-            <a href="#" class="menu__link">програма курсу</a>
+            <a href="#programme" class="menu__link">програма курсу</a>
 
           </li>
 
           <li class="menu__item">
 
-            <a href="#" class="menu__link">адреса</a>
+            <a href="#adress" class="menu__link">адреса</a>
 
           </li>
 
@@ -1194,25 +1335,25 @@
   <div class="bottom-bar__container container">
     <div class="bottom-bar__list">
       <div class="bottom-bar__item">
-        <a href="" class="bottom-bar__link">
+        <a href="#header" class="bottom-bar__link">
           <i class="icon-home bottom-bar__icon"></i>
           <p>головна</p></a
         >
       </div>
       <div class="bottom-bar__item">
-        <a href="" class="bottom-bar__link">
+        <a href="#about-course" class="bottom-bar__link">
           <i class="icon-services bottom-bar__icon"></i>
           <p>послуги</p></a
         >
       </div>
       <div class="bottom-bar__item">
-        <a href="" class="bottom-bar__link">
+        <a href="#about-us" class="bottom-bar__link">
           <i class="icon-works bottom-bar__icon"></i>
           <p>Роботи</p></a
         >
       </div>
       <div class="bottom-bar__item">
-        <a href="" class="bottom-bar__link">
+        <a href="#teachers" class="bottom-bar__link">
           <!-- <i class="icon-barbers bottom-bar__icon"></i> -->
           <svg
             class="bottom-bar__icon"
@@ -1232,13 +1373,17 @@
         >
       </div>
       <div class="bottom-bar__item">
-        <a href="" class="bottom-bar__link">
+        <a href="#adress" class="bottom-bar__link">
           <i class="icon-contacts bottom-bar__icon"></i>
           <p>Контакти</p></a
         >
       </div>
     </div>
   </div>
+</div>
+
+<div class="btn-to-course__wraper">
+    <a class="btn-to-course__link" href="#registry">Запис на курс</a>
 </div>
 
 <script src="js/main.min.js"></script>

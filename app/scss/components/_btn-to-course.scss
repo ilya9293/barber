@@ -1,0 +1,49 @@
+.btn-to-course {
+  &__wraper {
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    z-index: 100;
+    padding-right: 15px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    color: $light;
+    width: 90px;
+    height: 90px;
+    border: 1px solid $light;
+    border-radius: 100%;
+    background-color: $light-blue;
+    padding: 10px;
+    box-shadow: 0 0 15px $light-blue;
+    transition: $anim;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0 0 25px $light-blue;
+  }
+
+  @media (min-width: $tablet) {
+    &__wraper {
+      bottom: 30px;
+    }
+  }
+  @media (min-width: $desktop) {
+    &__link {
+      width: 120px;
+      height: 120px;
+      font-size: 20px;
+      line-height: 120%;
+      padding: 15px;
+    }
+  }
+}

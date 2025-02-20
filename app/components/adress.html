@@ -1,0 +1,61 @@
+<section class="section" id="adress">
+  <div class="container">
+    <h2 class="title">адреса академії</h2>
+    <div class="adress__wraper">
+      <div class="adress__wraper-contacts">
+        <p class="adress__subtitle">Перша академія барберінгу в Білій Церкві!</p>
+        <p class="adress__contacts">
+          <span class="adress__text">Ми знаходимось за адресою: </span>
+          <a
+            class="adress__location"
+            href="https://maps.app.goo.gl/fd4abBazwpTWpFC68"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            м. Біла Церква, бульвар Олександрійський, 50</a
+          >
+        </p>
+        <a
+          class="adress__link-map"
+          href="https://maps.app.goo.gl/fd4abBazwpTWpFC68"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img class="adress__map" src="../images/adress.webp" alt="adress" />
+        </a>
+      </div>
+
+      <form class="form-registry form-registry--adress">
+         <label class="form-registry__label">
+           <span class="form-registry__name">Твоє імʼя</span>
+           <input
+             class="form-registry__input"
+             type="text"
+             placeholder="Ім’я Прізвище"
+             name="name"
+           />
+         </label>
+         <label class="form-registry__label">
+           <span class="form-registry__name">Твій емейл</span>
+           <input class="form-registry__input" type="email" placeholder="Емейл" name="email" />
+         </label>
+         <label class="form-registry__label">
+           <span class="form-registry__name">Твій номер</span>
+           <input
+             class="form-registry__input form-registry__input--phone"
+             type="tel"
+             placeholder="096 123 45 67"
+             name="phone"
+           />
+           <div class="form-registry__wraper-flag">
+             <svg class="form-registry__icon-flag">
+               <use href="../icons/sprite.svg#flag"></use>
+             </svg>
+             <span class="form-registry__phone-code">+38</span>
+           </div>
+         </label>
+         <button class="form-registry__submit" type="submit"><span>Записатись</span></button>
+       </form>
+    </div>
+  </div>
+</section>

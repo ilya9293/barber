@@ -1,5 +1,7 @@
 @import "../../node_modules/modern-normalize/modern-normalize";
 @import "../../node_modules/swiper/swiper-bundle";
+@import "../../node_modules/accordion-js/dist/accordion.min";
+@import "../../node_modules/notyf/notyf.min";
 
 @import "./utils/fonts";
 @import "./utils/variables";
@@ -9,6 +11,7 @@
 @import "./base/section";
 @import "./components/box";
 @import "./utils/hide";
+@import "./utils/visualy-hidden";
 @import "./components/title";
 @import "./components/menu";
 @import "./components/social";
@@ -33,3 +36,7 @@
 @import "./layout/course-list";
 @import "./layout/course-programme";
 @import "./layout/feedback-gallery";
+@import "./layout/questions";
+@import "./layout/questions-list";
+@import "./layout/adress";
+@import "./components/btn-to-course";

@@ -3,8 +3,18 @@ youtubeScriptTag.src = "https://www.youtube.com/iframe_api";
 document.body.appendChild(youtubeScriptTag);
 
 let players = {};
+let apiLoaded = false;
 
 function onYouTubeIframeAPIReady() {
+  apiLoaded = true;
+}
+
+function initializeYouTubePlayers() {
+  if (!apiLoaded) {
+    setTimeout(initializeYouTubePlayers, 500);
+    return;
+  }
+
   document.querySelectorAll(".feedback-gallery__content").forEach((el, index) => {
     const videoId = el.dataset.videoId;
     if (!videoId) return;
@@ -24,6 +34,7 @@ function onYouTubeIframeAPIReady() {
       },
     });
   });
+  observerYT.unobserve(document.querySelector(".feedback-gallery"));
 }
 
 function toggleVideo(player) {
@@ -36,3 +47,17 @@ function stopOtherVideos(currentIndex) {
     if (index != currentIndex) players[index].pauseVideo();
   });
 }
+
+const observerYT = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        initializeYouTubePlayers();
+      }
+    });
+  },
+  { rootMargin: '1500px' }
+);
+
+const galleryYT = document.querySelector(".feedback-gallery");
+if (galleryYT) observerYT.observe(galleryYT);

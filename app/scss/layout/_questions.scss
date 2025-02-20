@@ -1,0 +1,15 @@
+.questions {
+  & {
+    background: linear-gradient(90deg, #067f8e 0%, #17c7e6 100%);
+  }
+
+  & .title-light {
+    line-height: normal;
+  }
+
+  @media (max-width: $desktop) {
+    & {
+      background-size: 1440px;
+    }
+  }
+}
