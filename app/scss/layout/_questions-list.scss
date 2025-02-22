@@ -27,7 +27,7 @@
     align-items: center;
     padding: 0 0 0 10px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     color: $light;
     line-height: 136%;
@@ -56,19 +56,11 @@
   }
 
   &__text {
-    font-size: 11px;
+    font-size: 14px;
     color: $light;
     padding: 0;
     line-height: 136%;
     padding-bottom: 5px;
-  }
-
-  @media (min-width: $small) and (max-width: $tablet) {
-    & {
-      grid-template-columns: repeat(2, 177px);
-      justify-content: space-between;
-      gap: 2px;
-    }
   }
 
   @media (min-width: $desktop) {

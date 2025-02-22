@@ -9,7 +9,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 70px;
+    width: 50px;
     height: 100%;
     z-index: 15;
     pointer-events: none;
@@ -29,7 +29,7 @@
   }
 
   &__item {
-    max-width: 177px;
+    max-width: 227px;
     width: 100%;
     background-color: $light;
     padding: 10px;
@@ -71,7 +71,8 @@
   }
 
   &__img {
-    max-width: 147px;
+    max-width: 94%;
+    width: 100%;
     height: 150px;
     object-fit: cover;
     position: relative;
@@ -81,7 +82,7 @@
 
   &__text {
     margin-top: 16px;
-    font-size: 12px;
+    font-size: 16px;
     color: $dark;
   }
 
@@ -104,7 +105,6 @@
 
     &__img {
       max-width: 98.3%;
-      width: 100%;
     }
   }
 
