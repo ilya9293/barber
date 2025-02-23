@@ -1,0 +1,49 @@
+.cookie {
+  & {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: $pale-black;
+    width: 100%;
+    padding: 10px;
+    z-index: 150;
+  }
+
+  &__wraper {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $light;
+  }
+
+  &__btn {
+    width: 15px;
+    height: 15px;
+    border: none;
+    flex-shrink: 0;
+    color: $light;
+    cursor: pointer;
+  }
+
+  &__btn svg {
+    width: 100%;
+    height: 100%;
+    fill: $light;
+  }
+
+  @media (min-width: $desktop) {
+    &__text {
+      font-size: 18px;
+    }
+
+    &__btn {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
