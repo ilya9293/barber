@@ -14,6 +14,10 @@
     max-width: 177px;
   }
 
+  &__item:last-child {
+    display: none;
+  }
+
   &__box-title {
     display: flex;
     justify-content: space-between;
@@ -54,7 +58,7 @@
   }
 
   &__discount-desk {
-    display: none;
+    display: flex;
     width: 82px;
     height: 35px;
     font-size: 25px;
@@ -90,8 +94,8 @@
       max-width: none;
     }
     &__item:last-child {
+      display: flex;
       align-self: flex-end;
-
     }
 
     &__title {
@@ -111,10 +115,6 @@
 
     &__discount-mob {
       display: none;
-    }
-
-    &__discount-desk {
-      display: flex;
     }
   }
 }

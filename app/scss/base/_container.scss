@@ -8,6 +8,13 @@
       max-width: $mobile;
     }
   }
+  
+  @media screen and (min-width: $large-mobile) {
+    & {
+      max-width: $large-mobile;
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     & {
       max-width: $tablet;

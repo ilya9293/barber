@@ -67,6 +67,12 @@
     line-height: 110%;
   }
 
+  @media (min-width: $large-mobile) and (max-width: $tablet) {
+    &__item {
+      max-width: 177px;
+    }
+  }
+
   @media (min-width: $desktop) {
     &__container::after {
       width: 183px;
@@ -121,7 +127,7 @@
   }
 
   &__text {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 100%;
   }
 
