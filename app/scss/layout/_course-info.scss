@@ -17,7 +17,8 @@
     color: #a6a6a6;
   }
 
-  &__num, &__sign {
+  &__num,
+  &__sign {
     font-weight: 700;
     font-size: 30px;
     line-height: 83%;
@@ -32,9 +33,15 @@
     line-height: 132%;
   }
 
-  @media (min-width: 390px) {
+  @media (min-width: $small) {
     & {
       justify-content: space-between;
+    }
+  }
+
+  @media (min-width: $large-mobile) and (max-width: $tablet) {
+    &__item:last-child {
+      grid-column: 2 / 3;
     }
   }
 
@@ -70,7 +77,8 @@
       font-size: 30px;
     }
 
-    &__num, &__sign {
+    &__num,
+    &__sign {
       font-size: 50px;
       line-height: 90%;
     }

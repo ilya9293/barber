@@ -86,7 +86,7 @@
     color: $dark;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $large-mobile) {
     &__item {
       max-width: 500px;
       padding: 17px 20px;

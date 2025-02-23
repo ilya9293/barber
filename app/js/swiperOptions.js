@@ -31,7 +31,7 @@ const swiperChoice = new Swiper(".choice-swiper", {
   },
 
   breakpoints: {
-    768: {
+    600: {
       spaceBetween: 30,
     },
     1235: {
