@@ -26,6 +26,12 @@
     margin-top: -5px;
   }
 
+  @media (min-width: $tablet) and (max-width: $desktop) {
+   & {
+      justify-content: space-evenly;
+    }
+  }
+
   @media (min-width: $desktop) {
     &__title {
       font-size: 30px;

@@ -115,7 +115,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $laptop) {
   .hero {
     &__title {
       max-width: 495px;
@@ -130,15 +130,15 @@
   }
 }
 
-@media (min-width: 1020px) {
-  .hero {
-    &__text {
-      font-size: 20px;
-      padding-bottom: 62px;
-      line-height: 125%;
-    }
-  }
-}
+// @media (min-width: 1020px) {
+//   .hero {
+//     &__text {
+//       font-size: 20px;
+//       padding-bottom: 62px;
+//       line-height: 125%;
+//     }
+//   }
+// }
 
 @media screen and (min-width: $desktop) {
   .hero {

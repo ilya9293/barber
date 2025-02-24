@@ -78,6 +78,10 @@
   }
 
   @media (min-width: $tablet) {
+   &__list {
+      column-gap: 15px;
+    }
+
     &__text {
       max-width: none;
     }
@@ -112,6 +116,7 @@
 
     &__features {
       flex: auto;
+      line-height: 100%;
     }
   }
 

@@ -8,7 +8,7 @@
       max-width: $mobile;
     }
   }
-  
+
   @media screen and (min-width: $large-mobile) {
     & {
       max-width: $large-mobile;
@@ -18,6 +18,12 @@
   @media screen and (min-width: $tablet) {
     & {
       max-width: $tablet;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    & {
+      max-width: $laptop;
     }
   }
 

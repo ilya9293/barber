@@ -79,6 +79,12 @@
     }
   }
 
+  @media (min-width: $laptop) and (max-width: $desktop) {
+    &__map {
+      max-height: 215px;
+    }
+  }
+
   @media (min-width: $desktop) {
     &__subtitle {
       font-size: 20px;
@@ -87,7 +93,5 @@
     &__contacts {
       font-size: 20px;
     }
-
-  
   }
 }

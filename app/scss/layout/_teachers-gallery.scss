@@ -73,7 +73,7 @@
     }
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $laptop) {
     &__container::after {
       width: 183px;
     }
@@ -131,7 +131,7 @@
     line-height: 100%;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $laptop) {
     &__item {
       padding-left: 25px;
     }
@@ -169,7 +169,7 @@
     display: block;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $laptop) {
     & {
       top: 184px;
     }
