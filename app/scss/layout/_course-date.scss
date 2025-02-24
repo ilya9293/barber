@@ -74,6 +74,14 @@
     }
   }
 
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    & {
+      justify-content: center;
+      gap: 100px;
+    }
+
+  }
+
   @media (min-width: $desktop) {
     &__text {
       font-size: 35px;

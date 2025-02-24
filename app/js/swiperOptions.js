@@ -58,7 +58,7 @@ const swiperTeachers = new Swiper(".teachers-swiper", {
   },
 
   breakpoints: {
-    1235: {
+    992: {
       spaceBetween: 50,
     },
   },

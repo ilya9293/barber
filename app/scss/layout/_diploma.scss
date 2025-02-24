@@ -30,10 +30,6 @@
     }
   }
 }
-.main {
-  &__diploma {
-  }
-}
 
 .diploma {
   padding: 0px 0px 39px 0px;
@@ -142,7 +138,7 @@
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: $laptop) {
   .diploma {
     &__header-block {
       padding-bottom: 17px;

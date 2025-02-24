@@ -22,7 +22,7 @@
     text-transform: uppercase;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $laptop) {
     & {
       margin-top: 30px;
       flex-direction: row;
@@ -37,7 +37,9 @@
       outline: 20px solid white;
       background: none;
     }
+  }
 
+  @media (min-width: $desktop) {
     &__text {
       font-size: 16px;
     }

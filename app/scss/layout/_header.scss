@@ -59,9 +59,17 @@
   }
 }
 
+@media screen and (min-width: $laptop) {
+  .header {
+    &__menu {
+      flex: 0 1 540px;
+    }
+  }
+}
+
 @media screen and (min-width: $desktop) {
   .header {
-   &__menu {
+    &__menu {
       flex: 0 1 634px;
     }
 

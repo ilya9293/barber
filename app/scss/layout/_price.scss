@@ -1,4 +1,8 @@
 .price {
+  &__container {
+    margin-top: 7px;
+  }
+
   @media (min-width: $tablet) {
     &__container {
       display: flex;
@@ -9,13 +13,19 @@
     &__box {
       width: 57.5%;
     }
+  }
 
-    @media (min-width: $tablet) and (max-width: $desktop) {
-      &__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__container {
+      align-items: flex-end;
     }
   }
 }

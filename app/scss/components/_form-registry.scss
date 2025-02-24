@@ -188,6 +188,8 @@
   }
 }
 
-.form-registry--course {
-  margin-top: 19px;
+@media (max-width: $tablet) {
+  .form-registry--course {
+    margin-top: 19px;
+  }
 }

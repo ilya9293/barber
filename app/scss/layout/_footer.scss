@@ -62,7 +62,7 @@
 @media screen and (min-width: $tablet) {
   .footer {
     padding-bottom: 0;
-    
+
     &__logo {
       padding: 10px 22px 10px 0px;
       & img {
@@ -103,6 +103,19 @@
     flex-direction: column;
     &__text {
       font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $laptop) and (max-width: $desktop) {
+  .footer {
+    &__menu {
+      flex: none;
+      margin: 0 auto;
+    }
+
+    & .menu__list {
+      column-gap: 100px;
     }
   }
 }
