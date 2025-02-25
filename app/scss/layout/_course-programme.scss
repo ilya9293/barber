@@ -28,7 +28,7 @@
   }
 
   &__module-text {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
   }
 
@@ -56,8 +56,8 @@
     position: relative;
     padding-left: 17px;
     padding-top: 16px;
-    padding-bottom: 47px;
-    height: 75px;
+   //  padding-bottom: 47px;
+   //  height: 75px;
     overflow: hidden;
     transition: $anim;
   }
@@ -73,12 +73,12 @@
   }
 
   &__lessons-title {
-    font-size: 14px;
+    font-size: 16px;
     color: $dark;
   }
 
   &__slider {
-    display: flex;
+    display: none;
     align-items: center;
     position: absolute;
     left: 0;
@@ -124,8 +124,8 @@
     &__lessons {
       padding-left: 30px;
       padding-top: 60px;
-      padding-bottom: 30px;
-      height: 100px;
+      // padding-bottom: 30px;
+      // height: 100px;
     }
 
     &__item:first-child &__module-content {
@@ -177,7 +177,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #067f8e;
     border: 1px solid #17c7e6;
@@ -205,7 +205,7 @@
 
   &__item {
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   &__item::before {
@@ -223,10 +223,6 @@
   @media (min-width: $desktop) {
     & {
       padding-left: 25px;
-    }
-
-    &__item {
-      font-size: 18px;
     }
 
     &__item::before {

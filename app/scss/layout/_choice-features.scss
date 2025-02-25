@@ -3,6 +3,11 @@
   grid-template-columns: 1fr;
   color: $light;
 
+  &__item {
+   display: flex;
+   flex-direction: column;
+  }
+
   &__wraper-title {
     display: flex;
     align-items: center;
@@ -12,8 +17,7 @@
   }
 
   &__title {
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -22,19 +26,20 @@
     position: relative;
     border-top: 1px solid $light;
     background: #066b78;
-    height: 80px;
+   //  height: 80px;
     overflow: hidden;
-    padding-bottom: 47px;
+   //  padding-bottom: 47px;
     transition: height 0.3s linear;
+    flex: auto;
   }
 
   &__text {
-    font-size: 16px;
-    padding: 4px 10px;
+    font-size: 18px;
+    padding: 10px;
   }
 
   &__slider {
-    display: flex;
+    display: none;
     align-items: center;
     position: absolute;
     left: 0;
@@ -116,11 +121,11 @@
 
     &__text {
       font-size: 18px;
-      padding: 4px 20px;
+      padding: 10px 20px;
     }
 
     &__wraper {
-      padding-bottom: 57px;
+      // padding-bottom: 57px;
     }
 
     &__slider {

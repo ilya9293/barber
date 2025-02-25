@@ -4,7 +4,7 @@
   position: relative;
   z-index: 5;
 
-//   background-image: url("../images/Banner_1.webp");
+  //   background-image: url("../images/Banner_1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -35,9 +35,10 @@
     line-height: 100%;
     font-weight: 800;
   }
+
   &__text {
     color: $light;
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 20px;
     font-style: normal;
     font-weight: 400;
@@ -83,12 +84,20 @@
   }
 }
 
+@media (min-width: $large-mobile) {
+  .hero {
+    &__body {
+      max-width: 350px;
+      padding: 64px 0px 70px 0px;
+    }
+  }
+}
+
 @media (min-width: $tablet) {
   .hero {
-   //  background-image: url("../images/Banner_2.webp");
+    //  background-image: url("../images/Banner_2.webp");
     &__body {
       max-width: 100%;
-      padding: 64px 0px 70px 0px;
     }
 
     &::after {
@@ -102,7 +111,6 @@
     }
     &__text {
       max-width: 488px;
-      font-size: 18px;
       padding-bottom: 62px;
       line-height: 125%;
     }
@@ -124,7 +132,6 @@
       line-height: 114%;
     }
     &__text {
-      font-size: 18px;
       padding-bottom: 62px;
     }
   }
