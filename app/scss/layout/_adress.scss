@@ -1,9 +1,4 @@
 .adress {
-  &__wraper {
-  }
-
-  &__wraper-contacts {
-  }
 
   &__subtitle {
     text-transform: uppercase;
@@ -13,7 +8,7 @@
 
   &__contacts {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   &__text,
@@ -51,13 +46,11 @@
     &__subtitle {
       text-transform: none;
       font-weight: 700;
-      // font-size: 20px;
       text-align: left;
     }
 
     &__contacts {
       margin-top: 0;
-      // font-size: 20px;
     }
 
     &__text,
@@ -86,11 +79,7 @@
   }
 
   @media (min-width: $desktop) {
-    &__subtitle {
-      font-size: 20px;
-    }
-
-    &__contacts {
+    &__subtitle, &__contacts {
       font-size: 20px;
     }
   }

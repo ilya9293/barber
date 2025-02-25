@@ -17,7 +17,7 @@
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -36,12 +36,6 @@
       padding: 8px 20px;
       outline: 20px solid white;
       background: none;
-    }
-  }
-
-  @media (min-width: $desktop) {
-    &__text {
-      font-size: 16px;
     }
   }
 }
