@@ -22,7 +22,7 @@
 
   &__item {
     width: 100%;
-    max-width: 167px;
+    max-width: 227px;
     height: auto;
   }
 
@@ -63,13 +63,13 @@
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 110%;
   }
 
-  @media (min-width: $large-mobile) and (max-width: $tablet) {
-    &__item {
-      max-width: 177px;
+  @media (min-width: $large-mobile) {
+    &__title {
+      font-size: 20px;
     }
   }
 
@@ -152,7 +152,7 @@
 .teachers-navigation {
   & {
     position: absolute;
-    top: 110px;
+    top: 160px;
     right: 0;
     z-index: 20;
   }

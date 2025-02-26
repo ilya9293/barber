@@ -42,11 +42,11 @@
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#about-course" class="menu__link">про курс</a>
+              <a href="#about-course" class="menu__link">курс</a>
             </li>
 
             <li class="menu__item">
-              <a href="#about-us" class="menu__link">про нас</a>
+              <a href="#about-us" class="menu__link">Переваги</a>
             </li>
             <li class="menu__item">
               <a href="#teachers" class="menu__link">майстри</a>
@@ -55,7 +55,7 @@
               <a href="#programme" class="menu__link">програма курсу</a>
             </li>
             <li class="menu__item">
-              <a href="#adress" class="menu__link">адреса</a>
+              <a href="#adress" class="menu__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -324,17 +324,25 @@
           <ul class="choice-gallery swiper-wrapper">
             <li class="choice-gallery__item swiper-slide">
               <div class="choice-gallery__content">
-                <h4 class="choice-gallery__title">Безлімітна косметика</h4>
+                <h4 class="choice-gallery__title">Перевірені бренди</h4>
                 <div class="choice-gallery__box-img">
-                  <img
-                    class="choice-gallery__img"
-                    src="./images/slider-cosmetics.webp"
-                    alt="cosmetics"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/slider-cosmetics-new.webp"
+                      type="image/webp"
+                      media="(min-width: 600px)"
+                    />
+                    <source srcset="./images/slider-cosmetics-new-mob.webp" type="image/webp" />
+                    <img
+                      class="choice-gallery__img"
+                      src="./images/slider-cosmetics-new-mob.webp"
+                      alt="cosmetics"
+                    />
+                  </picture>
                 </div>
                 <p class="choice-gallery__text">
-                  У тебе буде доступ до найкращих косметичних засобів: шампуні, кондиціонери,
-                  стайлінги та інші необхідні продукти для роботи.
+                  В період навчання у тебе буде доступ до найкращих, перевірених косметичних засобів:
+                  шампуні, кондиціонери, стайлінги та інші необхідні продукти для роботи.
                 </p>
               </div>
             </li>
@@ -342,11 +350,19 @@
               <div class="choice-gallery__content">
                 <h4 class="choice-gallery__title">Ідеальні інструменти</h4>
                 <div class="choice-gallery__box-img">
-                  <img
-                    class="choice-gallery__img"
-                    src="./images/slider-instruments.webp"
-                    alt="instruments"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/slider-instruments-new.webp"
+                      type="image/webp"
+                      media="(min-width: 600px)"
+                    />
+                    <source srcset="./images/slider-instruments-new-mob.webp" type="image/webp" />
+                    <img
+                      class="choice-gallery__img"
+                      src="./images/slider-instruments-new-mob.webp"
+                      alt="instruments"
+                    />
+                  </picture>
                 </div>
                 <p class="choice-gallery__text">
                   Професійні інструменти для стрижок і догляду за волоссям, що забезпечують комфорт і
@@ -365,14 +381,14 @@
                   />
                 </div>
                 <p class="choice-gallery__text">
-                  Ти не тільки навчишся стригти на манекенах, але й отримаєш реальний досвід роботи з
-                  клієнтами.
+                  Ти відпрацьовуватимеш навички, які отримаєш, на моделях, засвоюючи безцінний досвід
+                  роботи з різними типами волосся та запитами відвідувачів.
                 </p>
               </div>
             </li>
             <li class="choice-gallery__item swiper-slide">
               <div class="choice-gallery__content">
-                <h4 class="choice-gallery__title">Міжнародний сертифікат</h4>
+                <h4 class="choice-gallery__title">Сертифікат курсу</h4>
                 <div class="choice-gallery__box-img">
                   <img
                     class="choice-gallery__img"
@@ -381,8 +397,7 @@
                   />
                 </div>
                 <p class="choice-gallery__text">
-                  Після закінчення ти отримуєш диплом академії та міжнародний сертифікат КССК, який
-                  дає можливість працювати у Європі, Азії та Америці.
+                  Після фінального заліку, ти отримуєш диплом академії про закінчення курсу.
                 </p>
               </div>
             </li>
@@ -446,8 +461,8 @@
             </div>
             <div class="choice-features__wraper">
               <p class="choice-features__text">
-                Ще до випуску ти отримаєш пропозиції співпраці від найкращих салонів та барбершопів,
-                таких як Beauty Rehab, Backstage, Yeezy, 365 Salon.
+                Після випуску з нашої академії, ти отримаєш рекомендації для співпраці з іншими
+                барбершопами, а також можливість працевлаштуватися в SHOPbarbershop.
               </p>
             </div>
           </li>
@@ -835,11 +850,11 @@
                 <li class="course-description__item">Вивчення видів стрижок</li>
                 <li class="course-description__item">Стрижка бороди</li>
               </ul>
-              <div class="course-programme__slider box-slider">
+              <!-- <div class="course-programme__slider box-slider">
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
                 <i class="icon-arrow-dropdown"></i>
-              </div>
+              </div> -->
             </div>
           </li>
           <li class="course-programme__item">
@@ -862,11 +877,6 @@
                 <li class="course-description__item">Поглиблене вивчення техніки “fade”</li>
                 <li class="course-description__item">Практика на моделях</li>
               </ul>
-              <div class="course-programme__slider box-slider">
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-              </div>
             </div>
           </li>
           <li class="course-programme__item">
@@ -889,11 +899,6 @@
                 <li class="course-description__item">Техніки для середньої довжини</li>
                 <li class="course-description__item">Робота з ножицями та формою волосся</li>
               </ul>
-              <div class="course-programme__slider box-slider">
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-              </div>
             </div>
           </li>
           <li class="course-programme__item">
@@ -918,11 +923,6 @@
                   Робота з індивідуальними пропорціями клієнтів
                 </li>
               </ul>
-              <div class="course-programme__slider box-slider">
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-              </div>
             </div>
           </li>
           <li class="course-programme__item">
@@ -944,11 +944,6 @@
                 <li class="course-description__item">Техніка “fade” на бороді</li>
                 <li class="course-description__item">Гоління та камуфлювання сивини</li>
               </ul>
-              <div class="course-programme__slider box-slider">
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-              </div>
             </div>
           </li>
           <li class="course-programme__item">
@@ -970,11 +965,6 @@
                 <li class="course-description__item">Практичний іспит</li>
                 <li class="course-description__item">Розбір та оцінювання робіт</li>
               </ul>
-              <div class="course-programme__slider box-slider">
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-                <i class="icon-arrow-dropdown"></i>
-              </div>
             </div>
           </li>
         </ul>
@@ -990,14 +980,14 @@
             <div class="diploma__column diploma__column_first">
               <div class="diplom__item diplom__item_vertical item">
                 <div class="item__image item__image_h">
-                  <img src="./images/diploma_1.webp" alt="" />
+                  <img src="./images/diploma_1.webp" alt="diploms" />
                 </div>
               </div>
             </div>
             <div class="diploma__column diploma__column_second">
               <div class="diplom__item diplom__item_vertical item">
                 <div class="item__image item__image_h">
-                  <img src="./images/diploma_2.webp" alt="" />
+                  <img src="./images/diploma_2.webp" alt="diploms" />
                 </div>
               </div>
             </div>
@@ -1005,10 +995,10 @@
             <div class="diploma__column diploma__column_big">
               <div class="diploma__item diplom__item_horizontal item">
                 <div class="item__image item__image_v item__image_first">
-                  <img src="./images/diploma_3.webp" alt="" />
+                  <img src="./images/diploma_3.webp" alt="diploms" />
                 </div>
                 <div class="item__image item__image_v">
-                  <img src="./images/diploma_4.webp" alt="" />
+                  <img src="./images/diploma_4.webp" alt="diploms" />
                 </div>
               </div>
             </div>
@@ -1264,13 +1254,13 @@
 
             <li class="menu__item">
 
-              <a href="#about-course" class="menu__link">про курс</a>
+              <a href="#about-course" class="menu__link">курс</a>
 
             </li>
 
             <li class="menu__item">
 
-              <a href="#about-us" class="menu__link">про нас</a>
+              <a href="#about-us" class="menu__link">Переваги</a>
 
             </li>
 
@@ -1288,7 +1278,7 @@
 
             <li class="menu__item">
 
-              <a href="#adress" class="menu__link">адреса</a>
+              <a href="#adress" class="menu__link">Контакти</a>
 
             </li>
 
