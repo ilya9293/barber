@@ -69,6 +69,7 @@ const swiperFeedbacks = new Swiper(".feedback-swiper", {
   spaceBetween: 20,
   grabCursor: true,
   slidesPerView: "auto",
+  centerInsufficientSlides: true,
   navigation: {
     nextEl: ".feedback-navigation-next",
   },

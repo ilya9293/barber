@@ -31,6 +31,10 @@
     gap: 10px;
   }
 
+  &__mono {
+    width: 29px;
+  }
+
   @media (max-width: $small) {
     &__text {
       text-align: center;

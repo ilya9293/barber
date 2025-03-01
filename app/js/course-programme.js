@@ -53,18 +53,21 @@ const CountUp = countUp.CountUp;
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const numbers = entry.target.querySelectorAll(".course-date__stat");
-      numbers.forEach((num) => {
-        const endValue = parseInt(num.innerText, 10);
-        const counter = new CountUp(num, endValue, optionsCounterDate);
+      const number = entry.target.querySelector(".course-date__stat");
+      const maxNumber = entry.target.querySelector('.course-date__stat-max');
+      
+      const endValue = parseInt(number.innerText, 10);
+      const maxValue = parseInt(maxNumber.innerText, 10)
+      const ratioNumbers = (endValue / maxValue).toFixed(2);
+
+        const counter = new CountUp(number, endValue, optionsCounterDate);
 
         if (!counter.error) {
           counter.start();
         }
-      });
 
       courseDateNum.animate(1);
-      courseDateStart.animate(0.9);
+      courseDateStart.animate(ratioNumbers);
       observer.unobserve(entry.target);
     }
   });

@@ -60,6 +60,7 @@
   }
 
   &__stat,
+  &__stat-delimetr,
   &__stat-max {
     font-size: 21px;
   }
@@ -127,6 +128,7 @@
     }
 
     &__stat,
+    &__stat-delimetr,
     &__stat-max {
       font-size: 40px;
       text-transform: uppercase;
